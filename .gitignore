@@ -1,3 +1,6 @@
 # Ignore frameworks
 **/frameworks/**
 
+# Ignore local images
+**/imgs/**
+
