@@ -1,0 +1,521 @@
+//
+//  main-less.less
+//
+//  Created by Bryon Aragam on 2/1/14.
+//  Copyright (c) 2014 Bryon Aragam. All rights reserved.
+//
+
+// 
+// Current default font settings:
+//   color: rgb(50,50,50);
+//   font-weight: 300;
+//   letter-spacing: 0.5px;
+// 
+
+@my-bg-colour: transparent;
+@nav-toggle-colour: rgb(50,50,50);
+@main-title-font: 'Open Sans Condensed'; // Open Sans Condensed or Roboto Condensed
+@main-title-weight: 700;
+@main-text-font: 'Roboto'; // Robot or Open Sans or Helvetica Neue
+@main-text-weight: 300;
+@main-text-colour: rgb(50,50,50);
+@my-link-color: #3468b9; //#2861c7;
+@not-blue-color: #0E1DE1;
+@day-blur-radius: 2px;
+@night-blur-radius: 3px;
+@default-vw-size: 767px;
+
+// added for magnified version
+@large-font-size: 18px;
+@mobile-main-title-font-size: 2 * @large-font-size; // 22pt in original
+@main-title-font-size: 2.25 * @large-font-size;		// 24pt in original
+
+@var-font-size: 2.5vw;
+@var-main-title-font-size: 2.25 * @var-font-size;	// 24pt in original
+@max-font-size: 24px;
+@max-main-title-font-size: 2.25 * @max-font-size;	// 24pt in original
+
+// clean theme colours
+@menu-bg-opacity: 0.75;
+@day-clean-text-colour: rgb(50,50,50);
+@day-clean-menu-bg-colour: rgba(50,50,50,@menu-bg-opacity);
+@day-clean-menu-text-colour: rgb(255,255,255);
+@night-clean-text-colour: rgb(120,120,120);
+@night-clean-menu-bg-colour: rgba(120,120,120,@menu-bg-opacity);
+@night-clean-menu-text-colour: rgb(0,0,0);
+
+// image theme colours
+@day-text-colour: @day-clean-text-colour;
+@day-menu-bg-colour: @day-clean-menu-bg-colour;
+@day-menu-text-colour: rgb(10,135,217);
+
+@night-text-colour: @night-clean-text-colour;
+@night-menu-bg-colour: @night-clean-menu-bg-colour;
+@night-menu-text-colour: @night-clean-menu-text-colour;
+
+@sunrise-text-colour: rgb(255,255,255);
+@sunrise-menu-bg-colour: rgba(255,255,255,@menu-bg-opacity);
+@sunrise-menu-text-colour: rgb(93,105,136);
+
+@sunset-text-colour: rgb(255,255,255);
+@sunset-menu-bg-colour: rgba(255,255,255,@menu-bg-opacity);
+@sunset-menu-text-colour: rgb(236,110,95);
+
+// timing
+@bg-transition-time: 1s;
+@text-transition-time: 500ms;
+
+//
+// DEFAULT TAG BEHAVIOUR
+//
+html{
+	height: 100%;
+}
+
+html, body{
+	min-height: 100%;
+}
+
+body{	
+	font-family: @main-text-font;
+	font-weight: @main-text-weight;
+	font-size: @large-font-size; // for magnified version
+	background-color: @my-bg-colour;
+
+	// fixes for mobile scrolling issue
+	overflow: auto;
+}
+
+p{
+	margin: 0 0 16px; // 10px >> 16px
+}
+
+a{
+	color: @main-text-colour;
+}
+
+//
+// BACKGROUND
+//
+#bg{
+	background-color: transparent;
+	background-image: url('./imgs/sunset.jpg');
+	background-repeat: no-repeat; 
+	//background-attachment: fixed;
+	background-position: center center fixed;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	// fixes for mobile scrolling issue
+	overflow: hidden;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+//
+// MENU LIST
+//
+
+@media(max-width: 968px){
+	.col-sm-3{
+		padding-right: 15px; 
+	}
+}
+
+@media(max-width: 967px){
+	.col-sm-3{
+		// eliminate right padding on menu list, which truncates the menu items when left as default 15px
+		padding-right: 5px; 
+	}
+}
+
+@media(max-width: 867px){
+	.col-sm-3{
+		// eliminate right padding on menu list, which truncates the menu items when left as default 15px
+		padding-right: 0px; 
+	}
+}
+
+#my-navbar li > a,
+#my-navbar-xs li > a{
+	font-weight: 300;
+	margin-left: 5px; // used to be 15px (04/19/14)
+	letter-spacing: 0.5px;
+}
+
+#my-navbar li a, 
+#my-navbar-xs li a{
+	color: @day-clean-text-colour;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar li a.hover-day-clean, 
+#my-nav-list-xs li a.hover-day-clean{
+	color: @day-clean-text-colour;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar li a.hover-night-clean, 
+#my-nav-list-xs li a.hover-night-clean{
+	color: @night-clean-text-colour;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar li a.hover-day, 
+#my-nav-list-xs li a.hover-day{
+	color: @day-text-colour;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar li a.hover-night, 
+#my-nav-list-xs li a.hover-night{
+	color: @night-text-colour;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar li a.hover-sunrise, 
+#my-nav-list-xs li a.hover-sunrise{
+	color: @sunrise-text-colour;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar li a.hover-sunset, 
+#my-nav-list-xs li a.hover-sunset{
+	color: @sunset-text-colour;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+
+#my-navbar > li > a.hover-day-clean:hover,
+#my-navbar > li > a.hover-day-clean-active,
+#my-nav-list-xs a.hover-day-clean:hover,
+#my-nav-list-xs a.hover-day-clean-active{
+	background-color: @day-clean-menu-bg-colour;
+	color: @day-clean-menu-text-colour !important;
+	
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar > li > a.hover-night-clean:hover,
+#my-navbar > li > a.hover-night-clean-active,
+#my-nav-list-xs a.hover-night-clean:hover,
+#my-nav-list-xs a.hover-night-clean-active{
+	background-color: @night-clean-menu-bg-colour;
+	color: @night-clean-menu-text-colour !important;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar > li > a.hover-day:hover,
+#my-navbar > li > a.hover-day-active,
+#my-nav-list-xs a.hover-day:hover,
+#my-nav-list-xs a.hover-day-active{
+	background-color: @day-menu-bg-colour;
+	color: @day-menu-text-colour !important;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar > li > a.hover-sunrise:hover,
+#my-navbar > li > a.hover-sunrise-active,
+#my-nav-list-xs a.hover-sunrise:hover,
+#my-nav-list-xs a.hover-sunrise-active{
+	background-color: @sunrise-menu-bg-colour;
+	color: @sunrise-menu-text-colour !important;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar > li > a.hover-sunset:hover,
+#my-navbar > li > a.hover-sunset-active,
+#my-nav-list-xs a.hover-sunset:hover,
+#my-nav-list-xs a.hover-sunset-active{
+	background-color: @sunset-menu-bg-colour;
+	color: @sunset-menu-text-colour !important;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+#my-navbar > li > a.hover-night:hover,
+#my-navbar > li > a.hover-night-active,
+#my-nav-list-xs a.hover-night:hover,
+#my-nav-list-xs a.hover-night-active{
+	background-color: @night-menu-bg-colour;
+	color: @night-menu-text-colour !important;
+
+	-webkit-transition: background-color @bg-transition-time, color @text-transition-time;
+	-moz-transition: background-color @bg-transition-time, color @text-transition-time;
+	transition: background-color @bg-transition-time, color @text-transition-time;
+}
+
+//
+// NAVBAR
+//
+.navbar-toggle {
+	margin-top: 15px; // 8px >> 15px
+}
+
+// Adjusts main title text spacing, width, colour
+.my-main-heading > a{
+	//font-weight: 300;
+	letter-spacing: 0.5px;
+	margin-right: 5px;
+	color: @main-text-colour;
+}
+
+#my-navbar{
+	padding-right: 5px;
+}
+
+#my-navbar-xs{
+	background-color: #ffffff;
+	border: none;
+}
+
+#my-navbar-header{
+	font-weight: @main-text-weight;
+	color: @main-text-colour;
+}
+
+#my-navbar-header-xs{
+	font-weight: @main-text-weight;
+	color: @main-text-colour;
+
+	// These are needed in mobile mode to maximize space in the header
+	float: left;
+	padding: none;
+}
+
+// For customizing the navbar in mobile
+@media(max-width: @default-vw-size){
+	// Customize the main title font to be smaller, increase margins, etc in mobile mode
+	.my-main-title{
+		font-family: @main-title-font, sans-serif;
+		font-weight: @main-title-weight;
+		font-size: @mobile-main-title-font-size; // 22pt default
+		margin-top: 4px;
+		margin-left: 8px;
+		margin-bottom: 8px;
+	}
+
+	#my-navbar-xs{
+		background-color: rgba(255,255,255,0.9);
+	}
+
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: @nav-toggle-colour;
+	}
+
+	.navbar-default .navbar-toggle{
+    	border-color: @nav-toggle-colour;
+    }
+}
+
+@media(min-width: @default-vw-size){
+
+	// Add a bottom border to the header, but only in desktop mode
+	#my-navbar-xs{
+		background-color: transparent !important;
+		border-style: none none solid none;
+		border-bottom: 1px solid;
+		border-bottom-color: @main-text-colour;
+		margin-bottom: 0px;
+	}
+
+	// Set the main title font, etc 
+	.my-main-title{
+		font-family: @main-title-font, sans-serif;
+		font-weight: @main-title-weight;
+		font-size: @main-title-font-size; // 24pt default
+		margin-top: 8px;
+		margin-left: 8px;
+		margin-bottom: 4px;
+	}
+
+	// (Everything below) Prevents navbar from fixing to top of screen in desktop mode 
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+
+    .navbar-collapse {
+        max-height: none;
+    }
+
+    body {
+        margin: 0;
+    }
+}
+
+//
+// MAIN CONTENT / CONTAINERS
+//
+@media(min-width: @default-vw-size){
+	#my-main-container{
+		padding: 50px 25px 25px 25px;
+		margin-right: auto; 
+		margin-left: auto; 
+		width: 80%; // for magnified version
+		//max-width: 970px; // original version
+	}
+}
+
+@media(max-width: @default-vw-size){
+	#my-main-container{
+		padding: 50px 25px 25px 25px;
+		margin-right: auto; 
+		margin-left: auto; 
+	}
+}
+
+.my-main-content,
+.my-content{
+	//font-weight: 300;
+	letter-spacing: 0.5px;
+	color: @main-text-colour;
+	padding-top: 10px;
+}
+
+.my-subject-heading{
+	font-weight: @main-text-weight;
+	//font-size: 13pt;
+	font-size: @large-font-size * 1.25;
+}
+
+.my-hidden-heading{
+	font-family: @main-title-font, sans-serif;
+	font-weight: 400;
+	font-size: @large-font-size * 1.67;
+}
+
+// Use variable sized fonts when the viewport is in desktop mode
+//   These values should cascade from the fixed values already defined above:
+//   When the browser supports variable fonts (vmax, vmin, etc), the styles below 
+//   should take precedence; when the browser does not it should "fall back" to the
+//   styles defined above.
+@media(min-width: @default-vw-size){
+	body{
+		font-size: @var-font-size;
+	}
+
+	.my-main-title{
+		font-size: @var-main-title-font-size; // 24pt default
+	}
+
+	.my-subject-heading{
+		font-size: @var-font-size * 1.25;
+	}
+
+	.my-hidden-heading{
+		font-size: @var-font-size * 1.67;
+	}
+}
+
+@media(min-width: 980px){
+	body{
+		font-size: @max-font-size;
+	}
+
+	.my-main-title{
+		font-size: @max-main-title-font-size; // 24pt default
+	}
+
+	.my-subject-heading{
+		font-size: @max-font-size * 1.25;
+	}
+
+	.my-hidden-heading{
+		font-size: @max-font-size * 1.67;
+	}
+}
+
+//
+// FOOTER
+//
+#my-footer{
+	font-weight: @main-text-weight;
+	color: @main-text-colour;
+	float: right;
+	margin-top: 10px;
+}
+
+#my-footer > a{
+	cursor: pointer;
+}
+
+//
+// GENERIC STYLING 
+//
+.force-text-colour{
+	color: @main-text-colour !important;
+}
+
+.my-link{
+	color: @my-link-color;
+	font-weight: 400;
+}
+
+.my-not-blue-link{
+	color: @not-blue-color;
+	font-weight: 400;
+}
+
+#my-day,
+#my-night{
+	color: @main-text-colour;
+}
+
+#playtime{
+	cursor: pointer;
+}
+
+.modal-header{
+	padding: 10px;
+	border-bottom-color: @nav-toggle-colour;
+}
+
+// Modal close button
+.close{
+	font-size: 30px;
+	margin-right: 4px;
+}
+
+.content-hidden{
+	display: none;
+}
