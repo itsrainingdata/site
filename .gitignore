@@ -4,3 +4,6 @@
 # Ignore local images
 **/imgs/**
 
+# Ignore sandbox
+**/sandbox/**
+
