@@ -92,11 +92,12 @@
 					<div class="col-xs-12 col-sm-9 my-main-content">
 						<div class="my-content" id="intro-content">
 							<p class="my-hidden-heading">// about</p>
-							
-							<p>Lecturer in the Department of Statistics at UCLA.</p>
-							
+							<div class="content-wrapper">
+								<p>Lecturer in the Department of Statistics at UCLA.</p>
+							</div>
+								
 							<p class="my-subject-heading">// research interests</p>
-							<ul>
+							<ul class="list-wrapper">
 								<li>Machine learning</li>
 								<li>Graphical models</li>
 								<li>Computational statistics</li>
@@ -108,7 +109,7 @@
 							<div class="panel-group" id="intro-accordion" role="tablist" aria-multiselectable="true">
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-highdimdag-intro">
-										<p>
+										<p class="article-ref">
 											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#intro-accordion" href="#collapse-highdimdag-intro" aria-expanded="false" aria-controls="collapse-highdimdag-intro">Penalized least squares estimation of directed acyclic graphs.</a> (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
 										</p>
 									</div>
@@ -133,7 +134,7 @@
 
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-ccdr-intro">
-										<p>
+										<p class="article-ref">
 									        Aragam, B. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#intro-accordion" href="#collapse-ccdr-intro" aria-expanded="false" aria-controls="collapse-ccdr-intro">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
 								        </p>
 									</div>
@@ -161,22 +162,25 @@
 
 						<div class="my-content" id="research-content">
 							<p class="my-hidden-heading">// research</p>
-							<p>My main interests involve problems at the intersection of high-dimensional statistics and machine learning, with a focus on developing algorithms with sound theoretical guarantees. Some of my general interests include:</p>
-							<ul>
-								<li>Machine learning / graphical modeling / unsupervised learning</li>
-								<li>Computational statistics / distributed learning / high performance computing</li>
-								<li>High-dimensional statistics / compressed sensing</li>
-								<li>Sparse modeling / low-rank approximation / inverse problems</li>
-								<li>Bayesian networks / causal inference</li>
-								<li>Decision theory / social choice theory</li>
-							</ul>
+							<div class="content-wrapper">
+								<p>My main interests involve problems at the intersection of high-dimensional statistics and machine learning, with a focus on developing algorithms with sound theoretical guarantees. Some of my general interests include:</p>
+
+								<ul class="extra-indent">
+									<li>Machine learning / graphical modeling / unsupervised learning</li>
+									<li>Computational statistics / distributed learning / high performance computing</li>
+									<li>High-dimensional statistics / compressed sensing</li>
+									<li>Sparse modeling / low-rank approximation / inverse problems</li>
+									<li>Bayesian networks / causal inference</li>
+									<li>Decision theory / social choice theory</li>
+								</ul>
+							</div>
 								
 							<!-- PREPRINTS -->
 							<p class="my-subject-heading">// preprints</p>
 							<div class="panel-group" id="preprints-accordion" role="tablist" aria-multiselectable="true">
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-highdimdag-preprints">
-										<p>
+										<p class="article-ref">
 											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#preprints-accordion" href="#collapse-highdimdag-preprints" aria-expanded="false" aria-controls="collapse-highdimdag-preprints">Penalized least squares estimation of directed acyclic graphs.</a> (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
 										</p>
 									</div>
@@ -205,7 +209,7 @@
 							<div class="panel-group" id="pubs-accordion" role="tablist" aria-multiselectable="true">
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-ccdr-pubs">
-										<p>
+										<p class="article-ref">
 									        Aragam, B. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#pubs-accordion" href="#collapse-ccdr-pubs" aria-expanded="false" aria-controls="collapse-ccdr-pubs">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
 								        </p>
 									</div>
@@ -234,7 +238,7 @@
 							<div class="panel-group" id="thesis-accordion" role="tablist" aria-multiselectable="true">
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-dagthesis-thesis">
-										<p>
+										<p class="article-ref">
 									        <a class="collapsed my-link" data-toggle="collapse" data-parent="#thesis-accordion" href="#collapse-dagthesis-thesis" aria-expanded="false" aria-controls="collapse-dagthesis-thesis">Structure Learning of Linear Bayesian Networks in High-Dimensions</a>, PhD Thesis (joint work with Q. Zhou and A. Amini)
 								        </p>
 									</div>
@@ -261,7 +265,7 @@
 
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-lorentz-thesis">
-										<p>
+										<p class="article-ref">
 									        <a class="collapsed my-link" data-toggle="collapse" data-parent="#thesis-accordion" href="#collapse-lorentz-thesis" aria-expanded="false" aria-controls="collapse-lorentz-thesis">Volume Comparison with Integral Bounds in Lorentz Manifolds</a>, Undergraduate Thesis (joint work with J. Corvino, A. Karl, and A. Rochford)
 								        </p>
 									</div>
@@ -288,63 +292,75 @@
 						</div> <!-- END RESEARCH-CONTENT DIV -->
 
 						<div class="my-content" id="teaching-content">
-							<p>This quarter I am teaching Statistics 10 (Introduction to Statistical Reasoning).</p>
+							<div class="content-wrapper">
+								<p>This quarter I am teaching Statistics 10 (Introduction to Statistical Reasoning).</p>
 
-							<p>Past teaching assignments:</p>
-							<ul>
-								<li>Statistics 495A: Teaching College Statistics (Winter 2015)</li>
-								<li>Statistics 100A: Introduction to Probability (Spring 2014)</li>
-								<li>Statistics 101B: Introduction to Design and Analysis of Experiments (Winter 2014)</li>
-								<li>Statistics 102A: Introduction to Computational Statistics with R (Fall 2013)</li>
-								<li>PIC 20A: Principles of Java (Spring 2010)</li>
-								<li>PIC 10A: Introduction to C++ Programming (Winter 2010)</li>
-								<li>PIC 10A: Introduction to C++ Programming (Fall 2009)</li>
-							</ul>
+								<p>Past teaching assignments:</p>
+								<ul>
+									<li>Statistics 495A: Teaching College Statistics (Winter 2015)</li>
+									<li>Statistics 100A: Introduction to Probability (Spring 2014)</li>
+									<li>Statistics 101B: Introduction to Design and Analysis of Experiments (Winter 2014)</li>
+									<li>Statistics 102A: Introduction to Computational Statistics with R (Fall 2013)</li>
+									<li>PIC 20A: Principles of Java (Spring 2010)</li>
+									<li>PIC 10A: Introduction to C++ Programming (Winter 2010)</li>
+									<li>PIC 10A: Introduction to C++ Programming (Fall 2009)</li>
+								</ul>
+							</div>
 						</div> <!-- END TEACHING-CONTENT DIV -->
 
 						<div class="my-content" id="software-content">
 							<p class="my-hidden-heading">// software</p>
-							<p>Under construction.</p>
+							<div class="content-wrapper">
+								<p>Under construction.</p>
+							</div>
 						</div> <!-- END SOFTWARE-CONTENT DIV -->
 
 						<div class="my-content" id="consulting-content">
 							<p class="my-hidden-heading">// consulting</p>
-							<p>I am available for part-time and short-term consulting projects in analytics, web development, graphic design, modeling and simulation. I am experienced in many core languages as well as web-oriented and design-oriented software.</p>
+							<div class="content-wrapper">
+								<p>I am available for part-time and short-term consulting projects in analytics, web development, graphic design, modeling and simulation. I am experienced in many core languages as well as web-oriented and design-oriented software.</p>
 
-							<ul>
-								<li>Data: R + Rcpp / SQL / PL/pgSQL / MapReduce</li>
-								<li>Numerics: Mathematica / MATLAB</li>
-								<li>Core: C++ / C / Python / Java / Visual Basic</li>
-								<li><span id="playtime">Web: HTML(5) / XML / CSS / Javascript / jQuery</span></li>
-								<li>Design: Photoshop / Digital photography / Video editing</li>
-							</ul>
+								<ul>
+									<li>Data: R + Rcpp / SQL / PL/pgSQL / MapReduce</li>
+									<li>Numerics: Mathematica / MATLAB</li>
+									<li>Core: C++ / C / Python / Java / Visual Basic</li>
+									<li><span id="playtime">Web: HTML(5) / XML / CSS / Javascript / jQuery</span></li>
+									<li>Design: Photoshop / Digital photography / Video editing</li>
+								</ul>
 
-							<p>I am particularly interested in the analysis of social data, including social networks, advertising, and marketing.</p>
+								<p>I am particularly interested in the analysis of social data, including social networks, advertising, and marketing.</p>
+							</div>
 
 				            <p class="my-subject-heading">// tutoring</p>
-							<p>I am also available for tutoring. I have over 10 years experience and specialize in working with students of all ages with exceptional difficulties in mathematics. You may view my resum&#233; <a class="my-link" href="./bryonresume.pdf">here</a>.
-							</p>
+				            <div class="content-wrapper">
+								<p>I am also available for tutoring. I have over 10 years experience and specialize in working with students of all ages with exceptional difficulties in mathematics. You may view my resum&#233; <a class="my-link" href="./bryonresume.pdf">here</a>.
+								</p>
+							</div>
 
 				            <p class="my-subject-heading">// availability</p>
-							<p>Please <a class="my-link" id="click-about-2" href="#">e-mail me</a> for more details.</p>
+				            <div class="content-wrapper">
+								<p>Please <a class="my-link" id="click-about-2" href="#">e-mail me</a> for more details.</p>
+							</div>
 						</div> <!-- END CONSULTING-CONTENT DIV -->
 
 						<div class="my-content" id="about-content">
 							<p class="my-hidden-heading">// contact</p>
-							<p>If you want to...</p>
+							<div class="content-wrapper">
+								<p>If you want to...</p>
 
-							<p>...e-mail me: <a class="my-link" href="#">contactbryon@gmail.com</a></p>
+								<p>...e-mail me: <a class="my-link" href="#">bryon</a> at <a class="my-link" href="#">stat</a> dot <a class="my-link" href="#">ucla</a> dot <a class="my-link" href="#">edu</a> .</p>
 
-							<p>...find me on LinkedIn, <a class="my-link" href="https://www.linkedin.com/in/bryonaragam/">click here.</a></p>
+								<p>...find me on LinkedIn, <a class="my-link" href="https://www.linkedin.com/in/bryonaragam/">click here.</a></p>
 
-							<p>...see my resum&#233;, <a class="my-link" href="./bryonresume.pdf">click here.</a></p>
+								<p>...see my resum&#233;, <a class="my-link" href="./bryonresume.pdf">click here.</a></p>
 
-							<p>...see my preprints, <a class="my-link" href="#" data-toggle="modal" data-target="#pubs-modal">click here.</a></p>
-
-							<p>I also got a little bored while <a class="my-link" href="#" data-toggle="modal" data-target="#design-modal">designing</a> this site so I hid some easter eggs here and there.</p>
+								<p>I also got a little bored while <a class="my-link" href="#" data-toggle="modal" data-target="#design-modal">designing</a> this site so I hid some easter eggs here and there.</p>
+							</div>
 
 							<p class="my-subject-heading">// more about me</p>
-							<p>I am a fifth-year PhD student in the Department of Statistics at UCLA. I have a Masters in Applied Math from UCLA (2010) and received my Bachelor's in Math from the University of Tennessee (2008). Before teleporting across the country to start grad school, I had a short stint doing web development and analytics for a small market research firm. This explains my obsession with marketing and advertising.</p>
+							<div class="content-wrapper">
+								<p>I am a lecturer in the Department of Statistics at UCLA. I recently received my PhD in Statistics from UCLA (2015), where I studied graphical models and high-dimensional statistics under Professor Qing Zhou. I also have a MA in Applied Math from UCLA and a BS in Math from the University of Tennessee. Once upon a time, I had a short stint doing web development and analytics for a small market research firm. This explains my obsession with marketing and advertising.</p>
+							</div>
 
 							<!-- Modal -->
 							<div class="modal fade" id="design-modal" tabindex="-1" role="dialog" aria-labelledby="design-modal-title" aria-hidden="true">
@@ -369,27 +385,6 @@
 											<p class="force-text-colour">No images were used or harmed in the development of this site.</p>
 
 											<p class="force-text-colour">If you are having any issues navigating the site or (gasp!) found a bug, please let me know by shooting me an e-mail at <a class="my-link" href="#">contactbryon@gmail.com</a>.</p>										
-										</div>
-									</div>
-								</div>
-							</div> <!-- END MODAL DIV -->
-
-							<!-- Modal -->
-							<div class="modal fade" id="pubs-modal" tabindex="-1" role="dialog" aria-labelledby="preprint-modal-title" aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-											
-											<span class="modal-title force-text-colour my-subject-heading" id="preprint-modal-title"> // preprints and unpublished work</span>
-										</div>
-
-										<div class="modal-body">
-											<p class="force-text-colour">For more details on my research, please <a class="my-link" id="click-research-1" href="#" data-dismiss="modal" aria-hidden="true">visit my research page</a>.</p>
-
-											<p class="force-text-colour">Aragam, B. and Zhou, Q. (2015). <a class="my-link" href="http://arxiv.org/abs/1401.0852">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)</p>
-
-											<p class="force-text-colour"><a class="my-link" href="papers/thesis.pdf">Volume Comparison with Integral Bounds in Lorentz Manifolds</a>, Undergraduate Thesis (joint work with J. Corvino, A. Karl, and A. Rochford)</p>
 										</div>
 									</div>
 								</div>

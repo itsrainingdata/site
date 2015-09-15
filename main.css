@@ -12,11 +12,38 @@ body {
   background-color: transparent;
   overflow: auto;
 }
-p {
-  margin: 0 0 16px;
-}
 a {
   color: #323232;
+}
+@media (min-width: 767px) {
+  .panel-heading > .article-ref {
+    margin: 0 0 0 10px;
+  }
+  div.content-wrapper > p {
+    margin: 0 0 10px 25px;
+  }
+  div > ul.list-wrapper {
+    margin: 0 0 10px 6px;
+    padding-top: 10px;
+  }
+  div.content-wrapper > ul {
+    margin: 0 0 10px 26px;
+  }
+}
+@media (max-width: 767px) {
+  .panel-heading > .article-ref {
+    margin: 0 0 0 6px;
+  }
+  div.content-wrapper > p {
+    margin: 0 0 10px 20px;
+  }
+  div > ul.list-wrapper {
+    margin: 0 0 10px -2px;
+    padding-top: 10px;
+  }
+  div.content-wrapper > ul {
+    margin: 0 0 10px 16px;
+  }
 }
 #bg {
   background-color: transparent;
@@ -164,7 +191,10 @@ a {
   transition: background-color 1s, color 500ms;
 }
 .navbar-toggle {
-  margin-top: 15px;
+  margin-top: 12px;
+}
+.my-main-heading {
+  margin: 8px 0 4px 0;
 }
 .my-main-heading > a {
   letter-spacing: 0.5px;
@@ -298,7 +328,7 @@ a {
 #my-footer {
   font-weight: 300;
   color: #323232;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 #my-footer > a {
   cursor: pointer;
