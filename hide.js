@@ -11,7 +11,7 @@
 //   but more desirable than being unable to view any of the content beyond the intro page.
 //
 $(document).ready(function(){
-	$("#research-content, #teaching-content, #tutoring-content, #consulting-content, #about-content").addClass("content-hidden");
+	$("#research-content, #teaching-content, #software-content, #consulting-content, #about-content").addClass("content-hidden");
 	$(".my-hidden-heading").addClass("content-hidden");
 
 	$("body").show();
