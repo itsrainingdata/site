@@ -22,11 +22,11 @@ a {
   div.content-wrapper > p {
     margin: 0 0 10px 25px;
   }
-  div > ul.list-wrapper {
+  .my-content ul.list-wrapper {
     margin: 0 0 10px 6px;
     padding-top: 10px;
   }
-  div.content-wrapper > ul {
+  .content-wrapper ul {
     margin: 0 0 10px 26px;
   }
 }
@@ -330,7 +330,7 @@ a {
   color: #323232;
   margin-top: 16px;
 }
-#my-footer > a {
+#my-footer a {
   cursor: pointer;
 }
 .force-text-colour {
