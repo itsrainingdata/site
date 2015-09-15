@@ -298,17 +298,10 @@ a {
 #my-footer {
   font-weight: 300;
   color: #323232;
-  float: right;
   margin-top: 10px;
 }
 #my-footer > a {
   cursor: pointer;
-}
-#my-left-footer {
-  font-weight: 300;
-  color: #323232;
-  float: left;
-  margin-top: 10px;
 }
 .force-text-colour {
   color: #323232 !important;
@@ -344,4 +337,10 @@ a {
 }
 .heavy {
   font-weight: 400;
+}
+#my-left-footer {
+  float: left;
+}
+#my-right-footer {
+  float: right;
 }
