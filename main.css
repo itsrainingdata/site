@@ -1,1 +1,342 @@
-html{height:100%}html,body{min-height:100%}body{font-family:'Roboto';font-weight:300;font-size:18px;background-color:transparent;overflow:auto}p{margin:0 0 16px}a{color:#323232}#bg{background-color:transparent;background-image:url('imgs/sunset.jpg');background-repeat:no-repeat;background-position:center center fixed;position:fixed;width:100%;height:100%;z-index:-1;overflow:hidden;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}@media (max-width:968px){.col-sm-3{padding-right:15px}}@media (max-width:967px){.col-sm-3{padding-right:5px}}@media (max-width:867px){.col-sm-3{padding-right:0}}#my-navbar li>a,#my-navbar-xs li>a{font-weight:300;margin-left:5px;letter-spacing:.5px}#my-navbar li a,#my-navbar-xs li a{color:#323232;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar li a.hover-day-clean,#my-nav-list-xs li a.hover-day-clean{color:#323232;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar li a.hover-night-clean,#my-nav-list-xs li a.hover-night-clean{color:#787878;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar li a.hover-day,#my-nav-list-xs li a.hover-day{color:#323232;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar li a.hover-night,#my-nav-list-xs li a.hover-night{color:#787878;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar li a.hover-sunrise,#my-nav-list-xs li a.hover-sunrise{color:#fff;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar li a.hover-sunset,#my-nav-list-xs li a.hover-sunset{color:#fff;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar>li>a.hover-day-clean:hover,#my-navbar>li>a.hover-day-clean-active,#my-nav-list-xs a.hover-day-clean:hover,#my-nav-list-xs a.hover-day-clean-active{background-color:rgba(50,50,50,0.75);color:#fff !important;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar>li>a.hover-night-clean:hover,#my-navbar>li>a.hover-night-clean-active,#my-nav-list-xs a.hover-night-clean:hover,#my-nav-list-xs a.hover-night-clean-active{background-color:rgba(120,120,120,0.75);color:#000 !important;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar>li>a.hover-day:hover,#my-navbar>li>a.hover-day-active,#my-nav-list-xs a.hover-day:hover,#my-nav-list-xs a.hover-day-active{background-color:rgba(50,50,50,0.75);color:#0a87d9 !important;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar>li>a.hover-sunrise:hover,#my-navbar>li>a.hover-sunrise-active,#my-nav-list-xs a.hover-sunrise:hover,#my-nav-list-xs a.hover-sunrise-active{background-color:rgba(255,255,255,0.75);color:#5d6988 !important;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar>li>a.hover-sunset:hover,#my-navbar>li>a.hover-sunset-active,#my-nav-list-xs a.hover-sunset:hover,#my-nav-list-xs a.hover-sunset-active{background-color:rgba(255,255,255,0.75);color:#ec6e5f !important;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}#my-navbar>li>a.hover-night:hover,#my-navbar>li>a.hover-night-active,#my-nav-list-xs a.hover-night:hover,#my-nav-list-xs a.hover-night-active{background-color:rgba(120,120,120,0.75);color:#000 !important;-webkit-transition:background-color 1s,color 500ms;-moz-transition:background-color 1s,color 500ms;transition:background-color 1s,color 500ms}.navbar-toggle{margin-top:15px}.my-main-heading>a{letter-spacing:.5px;margin-right:5px;color:#323232}#my-navbar{padding-right:5px}#my-navbar-xs{background-color:#fff;border:none}#my-navbar-header{font-weight:300;color:#323232}#my-navbar-header-xs{font-weight:300;color:#323232;float:left;padding:none}@media (max-width:767px){.my-main-title{font-family:'Open Sans Condensed',sans-serif;font-weight:700;font-size:36px;margin-top:4px;margin-left:8px;margin-bottom:8px}#my-navbar-xs{background-color:rgba(255,255,255,0.9)}.navbar-default .navbar-toggle .icon-bar{background-color:#323232}.navbar-default .navbar-toggle{border-color:#323232}}@media (min-width:767px){#my-navbar-xs{background-color:transparent !important;border-style:none none solid none;border-bottom:1px solid;border-bottom-color:#323232;margin-bottom:0}.my-main-title{font-family:'Open Sans Condensed',sans-serif;font-weight:700;font-size:40.5px;margin-top:8px;margin-left:8px;margin-bottom:4px}.navbar-fixed-top{position:relative;top:auto}.navbar-collapse{max-height:none}body{margin:0}}@media (min-width:767px){#my-main-container{padding:50px 25px 25px 25px;margin-right:auto;margin-left:auto;width:80%}}@media (max-width:767px){#my-main-container{padding:50px 25px 25px 25px;margin-right:auto;margin-left:auto}}.my-main-content,.my-content{letter-spacing:.5px;color:#323232;padding-top:10px}.my-subject-heading{font-weight:300;font-size:22.5px}.my-hidden-heading{font-family:'Open Sans Condensed',sans-serif;font-weight:400;font-size:30.06px}@media (min-width:767px){body{font-size:2.5vw}.my-main-title{font-size:5.625vw}.my-subject-heading{font-size:3.125vw}.my-hidden-heading{font-size:4.175vw}}@media (min-width:980px){body{font-size:24px}.my-main-title{font-size:54px}.my-subject-heading{font-size:30px}.my-hidden-heading{font-size:40.08px}}#my-footer{font-weight:300;color:#323232;float:right;margin-top:10px}#my-footer>a{cursor:pointer}.force-text-colour{color:#323232 !important}.my-link{color:#3468b9;font-weight:400}.my-not-blue-link{color:#0e1de1;font-weight:400}#my-day,#my-night{color:#323232}#playtime{cursor:pointer}.modal-header{padding:10px;border-bottom-color:#323232}.close{font-size:30px;margin-right:4px}.content-hidden{display:none}
+html {
+  height: 100%;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  background-color: transparent;
+  overflow: auto;
+}
+p {
+  margin: 0 0 16px;
+}
+a {
+  color: #323232;
+}
+#bg {
+  background-color: transparent;
+  background-image: url('imgs/sunset.jpg');
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 968px) {
+  .col-sm-3 {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 967px) {
+  .col-sm-3 {
+    padding-right: 5px;
+  }
+}
+@media (max-width: 867px) {
+  .col-sm-3 {
+    padding-right: 0px;
+  }
+}
+#my-navbar li > a,
+#my-navbar-xs li > a {
+  font-weight: 300;
+  margin-left: 5px;
+  letter-spacing: 0.5px;
+}
+#my-navbar li a,
+#my-navbar-xs li a {
+  color: #323232;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar li a.hover-day-clean,
+#my-nav-list-xs li a.hover-day-clean {
+  color: #323232;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar li a.hover-night-clean,
+#my-nav-list-xs li a.hover-night-clean {
+  color: #787878;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar li a.hover-day,
+#my-nav-list-xs li a.hover-day {
+  color: #323232;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar li a.hover-night,
+#my-nav-list-xs li a.hover-night {
+  color: #787878;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar li a.hover-sunrise,
+#my-nav-list-xs li a.hover-sunrise {
+  color: #ffffff;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar li a.hover-sunset,
+#my-nav-list-xs li a.hover-sunset {
+  color: #ffffff;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar > li > a.hover-day-clean:hover,
+#my-navbar > li > a.hover-day-clean-active,
+#my-nav-list-xs a.hover-day-clean:hover,
+#my-nav-list-xs a.hover-day-clean-active {
+  background-color: rgba(50, 50, 50, 0.75);
+  color: #ffffff !important;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar > li > a.hover-night-clean:hover,
+#my-navbar > li > a.hover-night-clean-active,
+#my-nav-list-xs a.hover-night-clean:hover,
+#my-nav-list-xs a.hover-night-clean-active {
+  background-color: rgba(120, 120, 120, 0.75);
+  color: #000000 !important;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar > li > a.hover-day:hover,
+#my-navbar > li > a.hover-day-active,
+#my-nav-list-xs a.hover-day:hover,
+#my-nav-list-xs a.hover-day-active {
+  background-color: rgba(50, 50, 50, 0.75);
+  color: #0a87d9 !important;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar > li > a.hover-sunrise:hover,
+#my-navbar > li > a.hover-sunrise-active,
+#my-nav-list-xs a.hover-sunrise:hover,
+#my-nav-list-xs a.hover-sunrise-active {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #5d6988 !important;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar > li > a.hover-sunset:hover,
+#my-navbar > li > a.hover-sunset-active,
+#my-nav-list-xs a.hover-sunset:hover,
+#my-nav-list-xs a.hover-sunset-active {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #ec6e5f !important;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+#my-navbar > li > a.hover-night:hover,
+#my-navbar > li > a.hover-night-active,
+#my-nav-list-xs a.hover-night:hover,
+#my-nav-list-xs a.hover-night-active {
+  background-color: rgba(120, 120, 120, 0.75);
+  color: #000000 !important;
+  -webkit-transition: background-color 1s, color 500ms;
+  -moz-transition: background-color 1s, color 500ms;
+  transition: background-color 1s, color 500ms;
+}
+.navbar-toggle {
+  margin-top: 15px;
+}
+.my-main-heading > a {
+  letter-spacing: 0.5px;
+  margin-right: 5px;
+  color: #323232;
+}
+#my-navbar {
+  padding-right: 5px;
+}
+#my-navbar-xs {
+  background-color: #ffffff;
+  border: none;
+}
+#my-navbar-header {
+  font-weight: 300;
+  color: #323232;
+}
+#my-navbar-header-xs {
+  font-weight: 300;
+  color: #323232;
+  float: left;
+  padding: none;
+}
+@media (max-width: 767px) {
+  .my-main-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+  #my-navbar-xs {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #323232;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #323232;
+  }
+}
+@media (min-width: 767px) {
+  #my-navbar-xs {
+    background-color: transparent !important;
+    border-style: none none solid none;
+    border-bottom: 1px solid;
+    border-bottom-color: #323232;
+    margin-bottom: 0px;
+  }
+  .my-main-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+  }
+  .navbar-fixed-top {
+    position: relative;
+    top: auto;
+  }
+  .navbar-collapse {
+    max-height: none;
+  }
+  body {
+    margin: 0;
+  }
+}
+@media (min-width: 767px) {
+  #my-main-container {
+    padding: 50px 25px 25px 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  #my-main-container {
+    padding: 50px 25px 25px 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.my-main-content,
+.my-content {
+  letter-spacing: 0.5px;
+  color: #323232;
+  padding-top: 10px;
+}
+.my-subject-heading {
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 8px;
+}
+.my-hidden-heading {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 26.72px;
+}
+@media (min-width: 767px) {
+  body {
+    font-size: 2.5vw;
+  }
+  .my-main-title {
+    font-size: 5.625vw;
+  }
+  .my-subject-heading {
+    font-size: 3.125vw;
+  }
+  .my-hidden-heading {
+    font-size: 4.175vw;
+  }
+}
+@media (min-width: 980px) {
+  body {
+    font-size: 20px;
+  }
+  .my-main-title {
+    font-size: 45px;
+  }
+  .my-subject-heading {
+    font-size: 25px;
+  }
+  .my-hidden-heading {
+    font-size: 33.4px;
+  }
+}
+#my-footer {
+  font-weight: 300;
+  color: #323232;
+  float: right;
+  margin-top: 10px;
+}
+#my-footer > a {
+  cursor: pointer;
+}
+#my-left-footer {
+  font-weight: 300;
+  color: #323232;
+  float: left;
+  margin-top: 10px;
+}
+.force-text-colour {
+  color: #323232 !important;
+}
+.my-link {
+  color: #3468b9;
+  font-weight: 400;
+}
+.my-not-blue-link {
+  color: #0e1de1;
+  font-weight: 400;
+}
+#my-day,
+#my-night {
+  color: #323232;
+}
+#playtime {
+  cursor: pointer;
+}
+.modal-header {
+  padding: 10px;
+  border-bottom-color: #323232;
+}
+.close {
+  font-size: 30px;
+  margin-right: 4px;
+}
+.content-hidden {
+  display: none;
+}
+.abstract-panel > p {
+  font-size: 12pt;
+}

@@ -26,13 +26,13 @@
 @default-vw-size: 767px;
 
 // added for magnified version
-@large-font-size: 18px;
+@large-font-size: 16px;
 @mobile-main-title-font-size: 2 * @large-font-size; // 22pt in original
 @main-title-font-size: 2.25 * @large-font-size;		// 24pt in original
 
 @var-font-size: 2.5vw;
 @var-main-title-font-size: 2.25 * @var-font-size;	// 24pt in original
-@max-font-size: 24px;
+@max-font-size: 20px;
 @max-main-title-font-size: 2.25 * @max-font-size;	// 24pt in original
 
 // clean theme colours
@@ -416,6 +416,7 @@ a{
 	font-weight: @main-text-weight;
 	//font-size: 13pt;
 	font-size: @large-font-size * 1.25;
+	padding-top: 8px;
 }
 
 .my-hidden-heading{
@@ -479,6 +480,13 @@ a{
 	cursor: pointer;
 }
 
+#my-left-footer{
+	font-weight: @main-text-weight;
+	color: @main-text-colour;
+	float: left;
+	margin-top: 10px;
+}
+
 //
 // GENERIC STYLING 
 //
@@ -518,4 +526,9 @@ a{
 
 .content-hidden{
 	display: none;
+}
+
+// Testing / development
+.abstract-panel > p{
+	font-size: 12pt;
 }
