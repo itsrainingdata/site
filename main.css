@@ -259,6 +259,8 @@ a {
   font-weight: 300;
   font-size: 20px;
   padding-top: 8px;
+  padding-bottom: 2px;
+  margin-bottom: 0px;
 }
 .my-hidden-heading {
   font-family: 'Open Sans Condensed', sans-serif;
