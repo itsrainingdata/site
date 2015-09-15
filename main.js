@@ -480,8 +480,13 @@ $(document).ready(function(){
 		changeContent($("#teaching, #teaching-xs"), "#teaching-content", fade_delay, true);
 	});
 
+	// deprecating
 	$("#tutoring, #tutoring-xs").click(function(){
 		changeContent($("#tutoring, #tutoring-xs"), "#tutoring-content", fade_delay, true);
+	});
+
+	$("#software, #software-xs").click(function(){
+		changeContent($("#software, #software-xs"), "#software-content", fade_delay, true);
 	});
 
 	$("#consulting, #consulting-xs, #click-consulting-1").click(function(){
