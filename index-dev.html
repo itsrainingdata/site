@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="keywords" content="statistics,research,math,phd,high dimensional,compressed sensing,bayesian networks">
+    	<meta name="description" content="Personal homepage of Bryon Aragam, PhD candidate in Statistics at UCLA.">
+	    <meta name="author" content="Bryon Aragam">
+		<title>Bryon Aragam // UCLA Statistics</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="./frameworks/bootstrap/css/bootstrap.min.css"  type="text/css" />
+		<link rel="stylesheet" href="main.min.css"  type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700%7CRoboto:100,300,400" rel="stylesheet" type="text/css">
+
+		<!-- JAVASCRIPT LIBRARIES -->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+		<script src="./frameworks/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+		<!-- Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	    	<script src="./frameworks/respond.min.js"></script>
+	    <![endif]-->
+
+	    <!-- MY JAVASCRIPT -->
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+	    		$("body").hide();
+	    	});
+	    </script>
+		<script src="hide.min.js"></script>
+		<script src="preloader.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="content-hidden active-day" id="bg"></div>
+		<div class="container" id="my-main-container">
+		
+			<div class="row">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="my-navbar-xs">
+	        		<div class="container-fluid">		
+			        		
+			        		<div class="navbar-header my-main-heading">
+								<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target="#my-nav-list-xs" id="my-nav-button">
+							        <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							    </button>
+							    <a class="my-main-title hidden-xs" id="my-navbar-header" href="#"> // (n)ikhyl (b)ryon (a)ragam</a>
+							    <a class="my-main-title visible-xs" id="my-navbar-header-xs" href="#"> // (b)ryon (a)ragam</a>
+							</div>
+
+							<div class="collapse navbar-collapse" id="my-nav-list-xs">
+								  <ul class="nav navbar-nav visible-xs">
+									<li><a class="hover-day-clean" id="research-xs" href="#">research</a></li>
+									<li><a class="hover-day-clean" id="teaching-xs" href="#">teaching</a></li>
+									<li><a class="hover-day-clean" id="tutoring-xs" href="#">tutoring</a></li>
+									<li><a class="hover-day-clean" id="consulting-xs" href="#">consulting</a></li>
+									<li><a class="hover-day-clean" id="about-xs" href="#">about</a></li>
+								  </ul>
+							</div>
+							
+		        	</div>
+        		</nav>
+			</div> <!-- END ROW #1 -->
+
+			<div class="row">
+				<div class="col-sm-3 hidden-xs">
+					<ul class="nav" id="my-navbar">
+						<!--<li id="research">research</li>
+						<li id="teaching">teaching</li>
+						<li id="tutoring">tutoring</li>
+						<li id="consulting">consulting</li>
+						<li id="about">about</li>-->
+						<li><a class="hover-day-clean" id="research" href="#">research</a></li>
+						<li><a class="hover-day-clean" id="teaching" href="#">teaching</a></li>
+						<li><a class="hover-day-clean" id="tutoring" href="#">tutoring</a></li>
+						<li><a class="hover-day-clean" id="consulting" href="#">consulting</a></li>
+						<li><a class="hover-day-clean" id="about" href="#">about</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 col-sm-9 my-main-content">
+					<div class="my-content" id="intro-content">
+						<p class="my-hidden-heading">// about</p>
+						<p>Ph.D. candidate in the UCLA Department of Statistics, working on my PhD under Professor <a class="my-link" href="http://www.stat.ucla.edu/~zhou/">Qing Zhou</a>.</p>
+
+						<p>Research interests:</p>
+						<ul>
+							<li>Machine learning</li>
+							<li>Computational statistics</li>
+							<li>High-dimensional statistics</li>
+							<li>Unsupervised learning</li>
+						</ul>
+
+						<p>My dissertation work draws some interesting connections with regression analysis, compressed sensing, random matrix theory, and probability theory. Much of the motivation in our work draws on exploiting "hidden" convexity in nonconvex problems.</p>
+
+						<p>I also got a little bored while <a class="my-link" href="#" data-toggle="modal" data-target="#design-modal">designing</a> this site so I hid some easter eggs here and there.</p>
+
+						<!-- Modal -->
+						<div class="modal fade" id="design-modal" tabindex="-1" role="dialog" aria-labelledby="design-modal-title" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										
+										<span class="modal-title force-text-colour my-subject-heading" id="design-modal-title"> // About this site</span>
+									</div>
+
+									<div class="modal-body force-text-colour">
+										<p class="force-text-colour">This site was designed using...</p>
+
+											<ul>
+												<li>Bootstrap 3</li>
+												<li>jQuery</li>
+												<li>LESS + CSS3</li>
+												<li><a class="my-link" href="http://liliansurya.carbonmade.com/">Lilian Surya</a></li>
+											</ul>
+
+										<p class="force-text-colour">No images were used or harmed in the development of this site.</p>
+
+										<p class="force-text-colour">If you are having any issues navigating the site or (gasp!) found a bug, please let me know by shooting me an e-mail at <a class="my-link" href="#">contactbryon@gmail.com</a>.</p>										
+									</div>
+								</div>
+							</div>
+						</div> <!-- END MODAL DIV -->
+					</div>
+
+					<div class="my-content" id="research-content">
+						<p class="my-hidden-heading">// research</p>
+						<p>I am currently working on my PhD under the guidance of Professor Qing Zhou. Our work centers around high-dimensional statistical computing and graphical models. We are developing efficient algorithms and theory for estimating large Bayesian networks in a high dimensional setting using techniques from sparse approximation and compressed sensing.</p>
+
+						<p>Some of my general research interests include:</p>
+						<ul>
+							<li>Machine learning / graphical modeling / unsupervised learning</li>
+							<li>Computational statistics / distributed learning / high performance computing</li>
+							<li>High-dimensional statistics / compressed sensing</li>
+							<li>Sparse modeling / low-rank approximation / inverse problems</li>
+							<li>Bayesian networks / causal inference</li>
+							<li>Decision theory / social choice theory</li>
+						</ul>
+
+						<br/>
+						<p class="my-subject-heading">// publications</p>
+						<p>Aragam, B. and Zhou, Q. (2015). <a class="my-link" href="http://arxiv.org/abs/1401.0852">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)</p>
+						<p class="my-subject-heading">// unpublished work</p>
+						<p><a class="my-link" href="papers/thesis.pdf">Volume Comparison with Integral Bounds in Lorentz Manifolds</a>, Undergraduate Thesis (joint work with J. Corvino, A. Karl, and A. Rochford)</p>
+					</div>
+
+					<div class="my-content" id="teaching-content">
+						<p>This quarter I am teaching Statistics 495A (Teaching College Statistics).</p>
+
+						<p>Past teaching assignments:</p>
+						<ul>
+							<li>Statistics 100A: Introduction to Probability (Spring 2014)</li>
+							<li>Statistics 101B: Introduction to Design and Analysis of Experiments (Winter 2014)</li>
+							<li>Statistics 102A: Introduction to Computational Statistics with R (Fall 2013)</li>
+							<li>PIC 20A: Principles of Java (Spring 2010)</li>
+							<li>PIC 10A: Introduction to C++ Programming (Winter 2010)</li>
+							<li>PIC 10A: Introduction to C++ Programming (Fall 2009)</li>
+						</ul>
+					</div>
+
+					<div class="my-content" id="tutoring-content">
+						<p class="my-hidden-heading">// tutoring</p>
+						<p>I have been tutoring both privately and as a departmental assistant for 10+ years. My direct experience includes:</p>
+			            <ul>
+			            	<li>General high school math and science</li>
+			                <li>High school / AP / college calculus, computer science, and statistics</li>
+			                <li>Pre-algebra and college algebra</li>
+			                <li>Most undergraduate math / statistics subjects, including linear algebra, differential equations, analysis, algebra, probability and geometry/topology</li>
+			            </ul>
+			            
+			            <p>I specialize in working with students of all ages with exceptional difficulties in mathematics. You may view my resum&#233; <a class="my-link" href="./bryonresume.pdf">here</a>.</p>
+			            
+			            <p>I am also <a class="my-link" id="click-consulting-1" href="#">available for consulting</a> in web design and development, simulation development, and business statistics.</p>
+
+						<br/>
+			            <p class="my-subject-heading">// availability</p>
+						<p>Weekends and most weeknights. Appointments can be made during the day by request. I have an office at UCLA available for meeting, and I am willing to travel if necessary for appointments. Please <a class="my-link" id="click-about-1" href="#">e-mail me</a> for more details or to set up an appointment.</p>
+
+					</div>
+
+					<div class="my-content" id="consulting-content">
+						<p class="my-hidden-heading">// consulting</p>
+						<p>I am available for part-time and short-term consulting projects in analytics, web development, graphic design, modeling and simulation. I am experienced in many core languages as well as web-oriented and design-oriented software.</p>
+
+						<ul>
+							<li>Data: R + Rcpp / SQL / PL/pgSQL / MapReduce</li>
+							<li>Numerics: Mathematica / MATLAB</li>
+							<li>Core: C++ / C / Python / Java / Visual Basic</li>
+							<li><span id="playtime">Web: HTML(5) / XML / CSS / Javascript / jQuery</span></li>
+							<li>Design: Photoshop / Digital photography / Video editing</li>
+						</ul>
+
+						<p>I am particularly interested in the analysis of social data, including social networks, advertising, and marketing.</p>
+
+						<br/>
+			            <p class="my-subject-heading">// availability</p>
+						<p>Please <a class="my-link" id="click-about-2" href="#">e-mail me</a> for more details.</p>
+					</div>
+
+					<div class="my-content" id="about-content">
+						<p class="my-hidden-heading">// contact</p>
+						<p>If you want to...</p>
+
+						<p>...e-mail me: <a class="my-link" href="#">contactbryon@gmail.com</a></p>
+
+						<p>...find me on LinkedIn, <a class="my-link" href="https://www.linkedin.com/in/bryonaragam/">click here.</a></p>
+
+						<p>...see my resum&#233;, <a class="my-link" href="./bryonresume.pdf">click here.</a></p>
+
+						<p>...see my preprints, <a class="my-link" href="#" data-toggle="modal" data-target="#pubs-modal">click here.</a></p>
+
+						<br/>
+						<p class="my-subject-heading">// more about me</p>
+						<p>I am a fifth-year PhD student in the Department of Statistics at UCLA. I have a Masters in Applied Math from UCLA (2010) and received my Bachelor's in Math from the University of Tennessee (2008). Before teleporting across the country to start grad school, I had a short stint doing web development and analytics for a small market research firm. This explains my obsession with marketing and advertising.</p>
+
+						<!-- Modal -->
+						<div class="modal fade" id="pubs-modal" tabindex="-1" role="dialog" aria-labelledby="preprint-modal-title" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										
+										<span class="modal-title force-text-colour my-subject-heading" id="preprint-modal-title"> // preprints and unpublished work</span>
+									</div>
+
+									<div class="modal-body">
+										<p class="force-text-colour">For more details on my research, please <a class="my-link" id="click-research-1" href="#" data-dismiss="modal" aria-hidden="true">visit my research page</a>.</p>
+
+										<p class="force-text-colour">Aragam, B. and Zhou, Q. (2015). <a class="my-link" href="http://arxiv.org/abs/1401.0852">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)</p>
+
+										<p class="force-text-colour"><a class="my-link" href="papers/thesis.pdf">Volume Comparison with Integral Bounds in Lorentz Manifolds</a>, Undergraduate Thesis (joint work with J. Corvino, A. Karl, and A. Rochford)</p>
+									</div>
+								</div>
+							</div>
+						</div> <!-- END MODAL DIV -->
+
+					</div> <!-- END ABOUT-CONTENT DIV -->
+
+				</div> <!-- END MY-MAIN-CONTENT DIV -->
+				
+			</div> <!-- END ROW #2 -->
+			
+		</div> <!-- END MAIN CONTAINER -->
+		
+		<!-- MORE OF MY JAVASCRIPT (LOAD THE INTERACTIVE STUFF LAST) -->
+		<script src="main.min.js"></script>
+		<script src="drags-dbl.js"></script>
+	</body>
+	
+</html>
