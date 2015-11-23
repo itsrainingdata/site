@@ -412,9 +412,9 @@ $(document).ready(function(){
 			$(id_show).append('\
 				<div id="my-footer"> \
 					<div id="my-left-footer"> \
-						<a style="float:left; margin-right:18px" id="linkedin" href="http://www.linkedin.com/in/test"><i class="fa fa-linkedin fa-1x"></i></a> \
-						<a style="float:left; margin-right:18px" href="https://github.com/test"><i class="fa fa-github fa-1x"></i></a> \
-						<a style="float:left; margin-right:18px" id="email-xs" href="mailto:test@stat.ucla.edu"><i class="fa fa-envelope-o fa-1x"></i> </a> \
+						<a style="float:left; margin-right:18px" id="linkedin" href="http://www.linkedin.com/in/bryonaragam"><i class="fa fa-linkedin fa-1x"></i></a> \
+						<a style="float:left; margin-right:18px" href="https://github.com/itsrainingdata"><i class="fa fa-github fa-1x"></i></a> \
+						<a style="float:left; margin-right:18px" id="email-xs" href="mailto:bryon@stat.ucla.edu"><i class="fa fa-envelope-o fa-1x"></i> </a> \
 					</div> \
 					<div id="my-right-footer"> \
 						&nbsp;<a id="my-day">day</a> / <a id="my-night">night</a> / <a id="my-off">off</a>&nbsp; \
