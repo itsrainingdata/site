@@ -112,14 +112,14 @@
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-highdimdag-intro">
 										<p class="article-ref">
-											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#intro-accordion" href="#collapse-highdimdag-intro" aria-expanded="false" aria-controls="collapse-highdimdag-intro">Learning Directed Acyclic Graphs with Penalized Neighbourhood Regression.</a> (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
+											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#intro-accordion" href="#collapse-highdimdag-intro" aria-expanded="false" aria-controls="collapse-highdimdag-intro">Learning Directed Acyclic Graphs with Penalized Neighbourhood Regression.</a> (<a class="my-link" href="http://arxiv.org/pdf/#.pdf">preprint</a>)
 										</p>
 									</div>
 									<div id="collapse-highdimdag-intro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-highdimdag-intro">
 										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
 											<div class="abstract-panel content-wrapper">
 												<p>
-													We consider the problem of estimating a directed graphical model for a multivariate normal distribution. Our main results establish nonasymptotic deviation bounds on the estimation error, sparsity bounds, and model selection consistency for a penalized least squares estimator that allow for high-dimensional data with p >> n. The proof relies on interpreting the graphical model as a recursive linear structural equation model, which reduces the estimation problem to a series of tractable neighbourhood regression problems. Our results apply to a wide variety of practical situations that allow for general dependencies in the data as well as general regularizers including the MCP, SCAD, l0 and l1.
+													We consider the problem of estimating a directed acyclic graph (DAG) for a multivariate normal distribution from high-dimensional data with p >> n. Our main results establish nonasymptotic deviation bounds on the estimation error, sparsity bounds, and model selection consistency for a penalized least squares estimator under concave regularization. The proofs rely on interpreting the graphical model as a recursive linear structural equation model, which reduces the estimation problem to a series of tractable neighbourhood regressions and allows us to avoid making any assumptions regarding faithfulness. In doing so, we provide some novel techniques for handling general nonidentifiable and nonconvex problems. These techniques are used to guarantee uniform control over a superexponential number of neighbourhood regression problems by exploiting various notions of monotonicity among them. Our results apply to a wide variety of practical situations that allow for arbitrary nondegenerate covariance structures as well as many popular regularizers including the MCP, SCAD, L0 and L1.
 												</p>
 
 												<p>
@@ -127,7 +127,7 @@
 												</p>
 
 												<p>
-													<a class="my-link" href="http://arxiv.org/abs/1401.0852">Link to arXiv</a>
+													<a class="my-link" href="http://arxiv.org/abs/#">Link to arXiv</a>
 												</p>
 											</div>
 										</div>
@@ -183,14 +183,14 @@
 								<div> <!-- BEGIN ENTRY -->
 									<div class="panel-heading" role="tab" id="header-highdimdag-preprints">
 										<p class="article-ref">
-											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#preprints-accordion" href="#collapse-highdimdag-preprints" aria-expanded="false" aria-controls="collapse-highdimdag-preprints">Learning Directed Acyclic Graphs with Penalized Neighbourhood Regression.</a> (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
+											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#preprints-accordion" href="#collapse-highdimdag-preprints" aria-expanded="false" aria-controls="collapse-highdimdag-preprints">Learning Directed Acyclic Graphs with Penalized Neighbourhood Regression.</a> (<a class="my-link" href="http://arxiv.org/pdf/#.pdf">preprint</a>)
 										</p>
 									</div>
 									<div id="collapse-highdimdag-preprints" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-highdimdag-preprints">
 										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
 											<div class="abstract-panel content-wrapper">
 												<p>
-													We consider the problem of estimating a directed graphical model for a multivariate normal distribution. Our main results establish nonasymptotic deviation bounds on the estimation error, sparsity bounds, and model selection consistency for a penalized least squares estimator that allow for high-dimensional data with p >> n. The proof relies on interpreting the graphical model as a recursive linear structural equation model, which reduces the estimation problem to a series of tractable neighbourhood regression problems. Our results apply to a wide variety of practical situations that allow for general dependencies in the data as well as general regularizers including the MCP, SCAD, l0 and l1.
+													We consider the problem of estimating a directed acyclic graph (DAG) for a multivariate normal distribution from high-dimensional data with p >> n. Our main results establish nonasymptotic deviation bounds on the estimation error, sparsity bounds, and model selection consistency for a penalized least squares estimator under concave regularization. The proofs rely on interpreting the graphical model as a recursive linear structural equation model, which reduces the estimation problem to a series of tractable neighbourhood regressions and allows us to avoid making any assumptions regarding faithfulness. In doing so, we provide some novel techniques for handling general nonidentifiable and nonconvex problems. These techniques are used to guarantee uniform control over a superexponential number of neighbourhood regression problems by exploiting various notions of monotonicity among them. Our results apply to a wide variety of practical situations that allow for arbitrary nondegenerate covariance structures as well as many popular regularizers including the MCP, SCAD, L0 and L1.
 												</p>
 
 												<p>
@@ -198,7 +198,7 @@
 												</p>
 
 												<p>
-													<a class="my-link" href="http://arxiv.org/abs/1401.0852">Link to arXiv</a>
+													<a class="my-link" href="http://arxiv.org/abs/#">Link to arXiv</a>
 												</p>
 											</div>
 										</div>
@@ -316,7 +316,7 @@
 							<div class="content-wrapper">
 								<p>The source code for the CCDr algorithm described in <a class="my-link" href="http://arxiv.org/abs/1401.0852">Aragam and Zhou (2015)</a> is freely available online through GitHub.</p>
 
-								<p>ccdr is an R package that implements the CCDr structure learning algorithm. Based on observational data, this algorithm estimates the structure of a Bayesian network (aka edges in a DAG) using penalized maximum likelihood based on L1 or concave (MCP) regularization.</p>
+								<p>ccdr is an R package for structure learning of linear Bayesian networks for high-dimensional, Gaussian data. The underlying algorithm estimates a Bayesian network (aka DAG) using penalized maximum likelihood based on L1 or concave (MCP) regularization and observational data.</p>
 
 								<p><a class="my-link" href="http://www.github.com/itsrainingdata/ccdr/">Link to source code.</a></p>
 							</div>
