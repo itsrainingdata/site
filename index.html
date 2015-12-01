@@ -10,7 +10,8 @@
 		<title>Bryon Aragam // UCLA Statistics</title>
 		
 		<!-- CSS -->
-		<link rel="stylesheet" href="./frameworks/bootstrap/css/bootstrap.min.css"  type="text/css" />
+		<!-- <link rel="stylesheet" href="./frameworks/bootstrap/css/bootstrap.min.css"  type="text/css" /> <!-- Local hosting (slow) -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"  type="text/css" /> <!-- CDN hosting -->
 		<link rel="stylesheet" href="main.css"  type="text/css" />
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700%7CRoboto:100,300,400" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -18,7 +19,8 @@
 		<!-- JAVASCRIPT LIBRARIES -->
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
-		<script src="./frameworks/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<!-- <script src="./frameworks/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> <!-- Local hosting (slow) -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>  <!-- CDN hosting -->
 
 		<!-- Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,228 +36,386 @@
 	    </script>
 		<script src="hide.js"></script>
 		<script src="preloader.js"></script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-11059130-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</head>
 	
 	<body>
 		<div class="content-hidden active-day" id="bg"></div>
 		<div class="container" id="my-main-container">
-		
-			<div class="row">
-				<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="my-navbar-xs">
-	        		<div class="container-fluid">		
-			        		
-			        		<div class="navbar-header my-main-heading">
-								<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target="#my-nav-list-xs" id="my-nav-button">
-							        <span class="sr-only">Toggle navigation</span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							    </button>
-							    <a class="my-main-title hidden-xs" id="my-navbar-header" href="#"> // (n)ikhyl (b)ryon (a)ragam</a>
-							    <a class="my-main-title visible-xs" id="my-navbar-header-xs" href="#"> // (b)ryon (a)ragam</a>
-							</div>
-							
-							<div class="row hidden-xs" style="float:right; margin-right:20px; margin-top: 24px; margin-left: 8px; margin-bottom: 8px;">
-								<a class="hidden-xs hover-day-clean" style="float:left; margin-left:18px" id="linkedin" href="http://www.linkedin.com/in/test"><i class="fa fa-linkedin fa-2x"></i></a>
-								<a class="hidden-xs" style="float:left; margin-left:18px" href="https://github.com/test"><i class="fa fa-github fa-2x"></i></a>
-								<a class="hidden-xs" style="float:left; margin-left:18px" id="email-xs" href="mailto:test@stat.ucla.edu"><i class="fa fa-envelope fa-2x"></i> </a>
-							</div>
+			
+			<div id="bg-layer">
 
-							<div class="collapse navbar-collapse" id="my-nav-list-xs">
-								  <ul class="nav navbar-nav visible-xs">
-									<li><a class="hover-day-clean" id="research-xs" href="#">research</a></li>
-									<li><a class="hover-day-clean" id="teaching-xs" href="#">teaching</a></li>
-									<li><a class="hover-day-clean" id="tutoring-xs" href="#">tutoring</a></li>
-									<li><a class="hover-day-clean" id="consulting-xs" href="#">consulting</a></li>
-									<li><a class="hover-day-clean" id="about-xs" href="#">about</a></li>
-									<li><a class="hover-day-clean" id="linkedin-xs" href="http://www.linkedin.com/in/test"><i class="fa fa-linkedin fa-2x"></i></a></li>
-									<li><a class="hover-day-clean" href="https://github.com/test"><i class="fa fa-github fa-2x"></i></a></li>
-									<!--<li><a class="hover-day-clean" id="email-xs" href="mailto:test@stat.ucla.edu"><i class="fa fa-envelope fa-2x"></i> </a></li>-->
-								  </ul>
-							</div>
-							
-		        	</div>
-        		</nav>
-			</div> <!-- END ROW #1 -->
+				<div class="row"> <!-- BEGIN ROW #1 -->
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="my-navbar-xs">
+		        		<div class="container-fluid">		
+				        		
+				        		<div class="navbar-header my-main-heading">
+									<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target="#my-nav-list-xs" id="my-nav-button">
+								        <span class="sr-only">Toggle navigation</span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								    </button>
+								    <a class="my-main-title hidden-xs" id="my-navbar-header" href="#"> // (n)ikhyl (b)ryon (a)ragam</a>
+								    <a class="my-main-title visible-xs" id="my-navbar-header-xs" href="#"> // (b)ryon (a)ragam</a>
+								</div>
 
-			<div class="row">
-				<div class="col-sm-3 hidden-xs">
-					<ul class="nav" id="my-navbar">
-						<!--<li id="research">research</li>
-						<li id="teaching">teaching</li>
-						<li id="tutoring">tutoring</li>
-						<li id="consulting">consulting</li>
-						<li id="about">about</li>-->
-						<li><a class="hover-day-clean" id="research" href="#">research</a></li>
-						<li><a class="hover-day-clean" id="teaching" href="#">teaching</a></li>
-						<li><a class="hover-day-clean" id="tutoring" href="#">tutoring</a></li>
-						<li><a class="hover-day-clean" id="consulting" href="#">consulting</a></li>
-						<li><a class="hover-day-clean" id="about" href="#">about</a></li>
-					</ul>
-				</div>
+								<div class="collapse navbar-collapse" id="my-nav-list-xs">
+									  <ul class="nav navbar-nav visible-xs">
+										<li><a class="hover-day-clean" id="research-xs" href="#">research</a></li>
+										<li><a class="hover-day-clean" id="teaching-xs" href="#">teaching</a></li>
+										<li><a class="hover-day-clean" id="software-xs" href="#">software</a></li>
+										<li><a class="hover-day-clean" id="consulting-xs" href="#">consulting</a></li>
+										<li><a class="hover-day-clean" id="cv-xs" href="./cv.pdf">cv</a></li>
+										<li><a class="hover-day-clean" id="about-xs" href="#">about</a></li>
+									  </ul>
+								</div>
+								
+			        	</div>
+	        		</nav>
+				</div> <!-- END ROW #1 -->
 
-				<div class="col-xs-12 col-sm-9 my-main-content">
-					<div class="my-content" id="intro-content">
-						<p class="my-hidden-heading">// about</p>
-						<p>Ph.D. candidate in the UCLA Department of Statistics, working on my PhD under Professor <a class="my-link" href="http://www.stat.ucla.edu/~zhou/">Qing Zhou</a>.</p>
-
-						<p>Research interests:</p>
-						<ul>
-							<li>Machine learning</li>
-							<li>Computational statistics</li>
-							<li>High-dimensional statistics</li>
-							<li>Unsupervised learning</li>
+				<div class="row"> <!-- BEGIN ROW #2 -->
+					<div class="col-sm-3 hidden-xs">
+						<ul class="nav" id="my-navbar">
+							<li><a class="hover-day-clean" id="research" href="#">research</a></li>
+							<li><a class="hover-day-clean" id="teaching" href="#">teaching</a></li>
+							<li><a class="hover-day-clean" id="software" href="#">software</a></li>
+							<li><a class="hover-day-clean" id="consulting" href="#">consulting</a></li>
+							<li><a class="hover-day-clean" id="cv" href="./cv.pdf">cv</a></li>
+							<li><a class="hover-day-clean" id="about" href="#">about</a></li>
+							<!--<li>
+								<div class="padding:180px;">
+									<a class="hidden-xs hover-day-clean" style="float:left; margin-left:18px" id="linkedin" href="http://www.linkedin.com/in/test"><i class="fa fa-linkedin fa-1x"></i></a> 
+									<a class="hidden-xs" style="float:left; margin-left:18px" href="https://github.com/test"><i class="fa fa-github fa-1x"></i></a> 
+									<a class="hidden-xs" style="float:left; margin-left:18px" id="email-xs" href="mailto:test@stat.ucla.edu"><i class="fa fa-envelope-o fa-1x"></i> </a> 
+								</div>
+							</li>-->
 						</ul>
+					</div>
 
-						<p>My dissertation work draws some interesting connections with regression analysis, compressed sensing, random matrix theory, and probability theory. Much of the motivation in our work draws on exploiting "hidden" convexity in nonconvex problems.</p>
+					<div class="col-xs-12 col-sm-9 my-main-content">
+						<div class="my-content" id="intro-content">
+							<p class="my-hidden-heading">// about</p>
+							<div class="content-wrapper">
+								<p>Lecturer in the Department of Statistics at UCLA.</p>
+							</div>
+								
+							<p class="my-subject-heading">// announcements</p>
+								<div class="content-wrapper">
+									<p>I will be organizing an informal reading group on High-Dimensional Statistics and Machine Learning in Winter 2016. If you are interested in participating, please <a class="my-link" id="click-about-2" href="#">get in touch</a>.</p>
+								</div>
 
-						<p>I also got a little bored while <a class="my-link" href="#" data-toggle="modal" data-target="#design-modal">designing</a> this site so I hid some easter eggs here and there.</p>
-
-						<!-- Modal -->
-						<div class="modal fade" id="design-modal" tabindex="-1" role="dialog" aria-labelledby="design-modal-title" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										
-										<span class="modal-title force-text-colour my-subject-heading" id="design-modal-title"> // About this site</span>
+							<p class="my-subject-heading">// research interests</p>
+							<ul class="list-wrapper">
+								<li>Machine learning</li>
+								<li>Graphical models</li>
+								<li>Computational statistics</li>
+								<li>High-dimensional statistics</li>
+								<li>Unsupervised learning</li>
+							</ul>
+							
+							<p class="my-subject-heading">// recent preprints</p>
+							<div class="panel-group" id="intro-accordion" role="tablist" aria-multiselectable="true">
+								<div> <!-- BEGIN ENTRY -->
+									<div class="panel-heading" role="tab" id="header-highdimdag-intro">
+										<p class="article-ref">
+											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#intro-accordion" href="#collapse-highdimdag-intro" aria-expanded="false" aria-controls="collapse-highdimdag-intro">Learning Directed Acyclic Graphs with Penalized Neighbourhood Regression.</a> (<a class="my-link" href="http://arxiv.org/pdf/1511.08963v1.pdf">preprint</a>)
+										</p>
 									</div>
+									<div id="collapse-highdimdag-intro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-highdimdag-intro">
+										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
+											<div class="abstract-panel content-wrapper">
+												<p>
+													We consider the problem of estimating a directed acyclic graph (DAG) for a multivariate normal distribution from high-dimensional data with p >> n. Our main results establish nonasymptotic deviation bounds on the estimation error, sparsity bounds, and model selection consistency for a penalized least squares estimator under concave regularization. The proofs rely on interpreting the graphical model as a recursive linear structural equation model, which reduces the estimation problem to a series of tractable neighbourhood regressions and allows us to avoid making any assumptions regarding faithfulness. In doing so, we provide some novel techniques for handling general nonidentifiable and nonconvex problems. These techniques are used to guarantee uniform control over a superexponential number of neighbourhood regression problems by exploiting various notions of monotonicity among them. Our results apply to a wide variety of practical situations that allow for arbitrary nondegenerate covariance structures as well as many popular regularizers including the MCP, SCAD, L0 and L1.
+												</p>
 
-									<div class="modal-body force-text-colour">
-										<p class="force-text-colour">This site was designed using...</p>
+												<p>
+													<span class="heavy">Keywords:</span> Graphical modeling, high-dimensional statistics, concave regularization, directed acyclic graphs, structural equations, sparse regression
+												</p>
 
-											<ul>
-												<li>Bootstrap 3</li>
-												<li>jQuery</li>
-												<li>LESS + CSS3</li>
-												<li><a class="my-link" href="http://liliansurya.carbonmade.com/">Lilian Surya</a></li>
-											</ul>
+												<p>
+													<a class="my-link" href="http://arxiv.org/abs/1511.08963">Link to arXiv</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div> <!-- END ENTRY -->
 
-										<p class="force-text-colour">No images were used or harmed in the development of this site.</p>
+								<div> <!-- BEGIN ENTRY -->
+									<div class="panel-heading" role="tab" id="header-ccdr-intro">
+										<p class="article-ref">
+									        Aragam, B. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#intro-accordion" href="#collapse-ccdr-intro" aria-expanded="false" aria-controls="collapse-ccdr-intro">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
+								        </p>
+									</div>
+									<div id="collapse-ccdr-intro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-ccdr-intro">
+										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
+											<div class="abstract-panel content-wrapper">
+												<p>
+										        	We develop a penalized likelihood estimation framework to learn the structure of Gaussian Bayesian networks from observational data. In contrast to recent methods which accelerate the learning problem by restricting the search space, our main contribution is a fast algorithm for score-based structure learning which does not restrict the search space in any way and works on high-dimensional data sets with thousands of variables. Our use of concave regularization, as opposed to the more popular L0 (e.g. BIC) penalty, is new. Moreover, we provide theoretical guarantees which generalize existing asymptotic results when the underlying distribution is Gaussian. Most notably, our framework does not require the existence of a so-called faithful DAG representation, and as a result, the theory must handle the inherent nonidentifiability of the estimation problem in a novel way. Finally, as a matter of independent interest, we provide a comprehensive comparison of our approach to several standard structure learning methods using open-source packages developed for the R language. Based on these experiments, we show that our algorithm obtains higher sensitivity with comparable false discovery rates for high-dimensional data and scales efficiently as the number of nodes increases. In particular, the total runtime for our method to generate a solution path of 20 estimates for DAGs with 8000 nodes is around one hour.
+										        </p>
+												
+												<p>
+													<span class="heavy">Keywords:</span> Bayesian networks, concave penalization, directed acyclic graphs, coordinate descent, nonconvex optimization
+												</p>
 
-										<p class="force-text-colour">If you are having any issues navigating the site or (gasp!) found a bug, please let me know by shooting me an e-mail at <a class="my-link" href="#">contactbryon@gmail.com</a>.</p>										
+										        <p>
+										        	<a class="my-link" href="http://arxiv.org/abs/1401.0852">Link to arXiv</a>
+										        </p>
+											</div>
+										</div>
+									</div>
+								</div> <!-- END ENTRY -->
+							</div> <!-- END ACCORDION DIV -->
+							
+						</div> <!-- END INTRO-CONTENT DIV -->
+
+						<div class="my-content" id="research-content">
+							<p class="my-hidden-heading">// research</p>
+							<div class="content-wrapper">
+								<p>My main interests involve problems at the intersection of high-dimensional statistics and machine learning, with a focus on developing algorithms with sound theoretical guarantees. Some of my general interests include:</p>
+
+								<ul class="extra-indent">
+									<li>Machine learning / graphical modeling / unsupervised learning</li>
+									<li>Computational statistics / distributed learning / high performance computing</li>
+									<li>High-dimensional statistics / compressed sensing</li>
+									<li>Sparse modeling / low-rank approximation / inverse problems</li>
+									<li>Bayesian networks / causal inference</li>
+									<li>Decision theory / social choice theory</li>
+								</ul>
+							</div>
+								
+							<!-- PREPRINTS -->
+							<p class="my-subject-heading">// preprints</p>
+							<div class="panel-group" id="preprints-accordion" role="tablist" aria-multiselectable="true">
+								<div> <!-- BEGIN ENTRY -->
+									<div class="panel-heading" role="tab" id="header-highdimdag-preprints">
+										<p class="article-ref">
+											Aragam, B., Amini, A. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#preprints-accordion" href="#collapse-highdimdag-preprints" aria-expanded="false" aria-controls="collapse-highdimdag-preprints">Learning Directed Acyclic Graphs with Penalized Neighbourhood Regression.</a> (<a class="my-link" href="http://arxiv.org/pdf/1511.08963v1.pdf">preprint</a>)
+										</p>
+									</div>
+									<div id="collapse-highdimdag-preprints" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-highdimdag-preprints">
+										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
+											<div class="abstract-panel content-wrapper">
+												<p>
+													We consider the problem of estimating a directed acyclic graph (DAG) for a multivariate normal distribution from high-dimensional data with p >> n. Our main results establish nonasymptotic deviation bounds on the estimation error, sparsity bounds, and model selection consistency for a penalized least squares estimator under concave regularization. The proofs rely on interpreting the graphical model as a recursive linear structural equation model, which reduces the estimation problem to a series of tractable neighbourhood regressions and allows us to avoid making any assumptions regarding faithfulness. In doing so, we provide some novel techniques for handling general nonidentifiable and nonconvex problems. These techniques are used to guarantee uniform control over a superexponential number of neighbourhood regression problems by exploiting various notions of monotonicity among them. Our results apply to a wide variety of practical situations that allow for arbitrary nondegenerate covariance structures as well as many popular regularizers including the MCP, SCAD, L0 and L1.
+												</p>
+
+												<p>
+													<span class="heavy">Keywords:</span> Graphical modeling, high-dimensional statistics, concave regularization, directed acyclic graphs, structural equations, sparse regression
+												</p>
+
+												<p>
+													<a class="my-link" href="http://arxiv.org/abs/1511.08963">Link to arXiv</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div> <!-- END ENTRY -->
+							</div> <!-- END ACCORDION DIV -->
+
+							<!-- PUBLICATIONS -->
+							<p class="my-subject-heading">// publications</p>
+							<div class="panel-group" id="pubs-accordion" role="tablist" aria-multiselectable="true">
+								<div> <!-- BEGIN ENTRY -->
+									<div class="panel-heading" role="tab" id="header-ccdr-pubs">
+										<p class="article-ref">
+									        Aragam, B. and Zhou, Q. (2015). <a class="collapsed my-link" data-toggle="collapse" data-parent="#pubs-accordion" href="#collapse-ccdr-pubs" aria-expanded="false" aria-controls="collapse-ccdr-pubs">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)
+								        </p>
+									</div>
+									<div id="collapse-ccdr-pubs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-ccdr-pubs">
+										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
+											<div class="abstract-panel content-wrapper">
+												<p>
+										        	We develop a penalized likelihood estimation framework to learn the structure of Gaussian Bayesian networks from observational data. In contrast to recent methods which accelerate the learning problem by restricting the search space, our main contribution is a fast algorithm for score-based structure learning which does not restrict the search space in any way and works on high-dimensional data sets with thousands of variables. Our use of concave regularization, as opposed to the more popular L0 (e.g. BIC) penalty, is new. Moreover, we provide theoretical guarantees which generalize existing asymptotic results when the underlying distribution is Gaussian. Most notably, our framework does not require the existence of a so-called faithful DAG representation, and as a result, the theory must handle the inherent nonidentifiability of the estimation problem in a novel way. Finally, as a matter of independent interest, we provide a comprehensive comparison of our approach to several standard structure learning methods using open-source packages developed for the R language. Based on these experiments, we show that our algorithm obtains higher sensitivity with comparable false discovery rates for high-dimensional data and scales efficiently as the number of nodes increases. In particular, the total runtime for our method to generate a solution path of 20 estimates for DAGs with 8000 nodes is around one hour.
+										        </p>
+												
+												<p>
+													<span class="heavy">Keywords:</span> Bayesian networks, concave penalization, directed acyclic graphs, coordinate descent, nonconvex optimization
+												</p>
+
+										        <p>
+										        	<a class="my-link" href="http://arxiv.org/abs/1401.0852">Link to arXiv</a>
+										        </p>
+											</div>
+										</div>
+									</div>
+								</div> <!-- END ENTRY -->
+							</div> <!-- END ACCORDION DIV -->
+
+							<!-- BEGIN THESES -->
+							<p class="my-subject-heading">// dissertation and theses</p>
+							<div class="panel-group" id="thesis-accordion" role="tablist" aria-multiselectable="true">
+								<div> <!-- BEGIN ENTRY -->
+									<div class="panel-heading" role="tab" id="header-dagthesis-thesis">
+										<p class="article-ref">
+									        <a class="collapsed my-link" data-toggle="collapse" data-parent="#thesis-accordion" href="#collapse-dagthesis-thesis" aria-expanded="false" aria-controls="collapse-dagthesis-thesis">Structure Learning of Linear Bayesian Networks in High-Dimensions</a>, PhD Thesis (joint work with Q. Zhou and A. Amini)
+								        </p>
+									</div>
+									<div id="collapse-dagthesis-thesis" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-dagthesis-thesis">
+										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
+											<div class="abstract-panel content-wrapper">
+												<p>
+										        	Research into graphical models is a rapidly developing enterprise, garnering significant interest from both the statistics and machine learning communities. A parallel thread in both communities has been the study of low-dimensional structures in high-dimensional models where $p\gg n$. Recently, there has been a surge of interest in connecting these threads in order to understand the behaviour of graphical models in high-dimensions. Due to their relative simplicity, undirected models such as the Gaussian graphical model and Ising models have received most of the attention, whereas directed graphical models have received comparatively little attention. An important yet largely unresolved class of directed graphical models are Bayesian networks, or directed acyclic graphs (DAGs). These models have a wide variety of applications in aritificial intelligence, machine learning, genetics, and computer vision, but estimation of Bayesian networks in high-dimensions is not well-understood. The main focus of this dissertation is to address some fundamental questions about these models in high-dimensions.
+												</p>
+												<p>
+													The primary goal is to develop both algorithms and theory for estimating continuous, linear Bayesian networks, capable of handling modern high-dimensional problems. Motivated by problems from the regression literature, we show how to adapt recent work in sparse learning and nonconvex optimization to the structure learning problem for Bayesian networks in order to estimate DAGs with several thousand nodes. We draw an explicit connection between linear Bayesian networks and so-called neighbourhood regression problems and show how this can be exploited in order to derive nonasymptotic performance bounds for penalized least squares estimators of directed graphical models.
+												</p>
+												<p>
+													On the algorithmic side, we develop a method for estimating Gaussian Bayesian networks based on convex reparametrization and cyclic coordinate descent. In contrast to recent methods which accelerate the learning problem by restricting the search space, we propose a method for score-based structure learning which does not restrict the search space. We do not require the existence of a so-called faithful DAG representation, and as a result, our methodology must handle the inherent nonidentifiability of the estimation problem in a novel way. On the theoretical side, we provide (a) Finite-dimensional performance guarantees for local minima of the resulting nonconvex program, and (b) A general high-dimensional framework for global minima of the nonconvex program. Both the algorithms and theory apply to a general class of regularizers, including the MCP, SCAD, $\ell_1$ and $\ell_0$ penalties. Finally, as a matter of independent interest, we provide a comprehensive comparison of our approach to several standard structure learning methods using open-source packages developed for the \texttt{R} language.
+										        </p>
+												
+												<p>
+													<span class="heavy">Keywords:</span> Bayesian networks, high-dimensional statistics, graphical models, sparse regression, concave regularization, nonconvex optimization
+												</p>
+											</div>
+										</div>
+									</div>
+								</div> <!-- END ENTRY -->
+
+								<div> <!-- BEGIN ENTRY -->
+									<div class="panel-heading" role="tab" id="header-lorentz-thesis">
+										<p class="article-ref">
+									        <a class="collapsed my-link" data-toggle="collapse" data-parent="#thesis-accordion" href="#collapse-lorentz-thesis" aria-expanded="false" aria-controls="collapse-lorentz-thesis">Volume Comparison with Integral Bounds in Lorentz Manifolds</a>, Undergraduate Thesis (joint work with J. Corvino, A. Karl, and A. Rochford)
+								        </p>
+									</div>
+									<div id="collapse-lorentz-thesis" class="panel-collapse collapse" role="tabpanel" aria-labelledby="header-lorentz-thesis">
+										<div> <!--- Used to be a wrapper for class="panel-body"; no longer functional -->
+											<div class="abstract-panel content-wrapper">
+												<p>
+										        	Ten years ago, Ehrlich and Sanchez produced a pointwise statement of the classical Bishop volume comparison theorem for so-called SCLV subsets of the causal future in a Lorentz manifold, while Petersen and Wei developed and proved an integral version for Riemannian manifolds. We apply Peterson and Wei's method to the SCLV sets, and verify that two essential differential equations from the Riemannian proof extend to the Lorentz setting. As a result, we obtain a volume comparison theorem for Lorentz manifolds with integral, rather than pointwise, bounds. We also brie􏱭y discuss the history of the problem, starting with Bishop's original theorem from 1963.
+										        </p>
+												
+												<p>
+													<span class="heavy">Keywords:</span> Differential geometry, volume comparison, Lorentz manifolds
+												</p>
+
+										        <p>
+										        	<a class="my-link" href="./papers/thesis.pdf">Link</a>
+										        </p>
+											</div>
+										</div>
+									</div>
+								</div> <!-- END ENTRY -->
+							</div> <!-- END ACCORDION DIV -->
+
+						</div> <!-- END RESEARCH-CONTENT DIV -->
+
+						<div class="my-content" id="teaching-content">
+							<div class="content-wrapper">
+								<p>This quarter I am teaching Statistics 10 (Introduction to Statistical Reasoning).</p>
+
+								<p>Past teaching assignments:</p>
+								<ul>
+									<li>Statistics 495A: Teaching College Statistics (Winter 2015)</li>
+									<li>Statistics 100A: Introduction to Probability (Spring 2014)</li>
+									<li>Statistics 101B: Introduction to Design and Analysis of Experiments (Winter 2014)</li>
+									<li>Statistics 102A: Introduction to Computational Statistics with R (Fall 2013)</li>
+									<li>PIC 20A: Principles of Java (Spring 2010)</li>
+									<li>PIC 10A: Introduction to C++ Programming (Winter 2010)</li>
+									<li>PIC 10A: Introduction to C++ Programming (Fall 2009)</li>
+								</ul>
+							</div>
+						</div> <!-- END TEACHING-CONTENT DIV -->
+
+						<div class="my-content" id="software-content">
+							<p class="my-hidden-heading">// software</p>
+							<p class="my-subject-heading">// ccdr package for R</p>
+							<div class="content-wrapper">
+								<p>The source code for the CCDr algorithm described in <a class="my-link" href="http://arxiv.org/abs/1401.0852">Aragam and Zhou (2015)</a> is freely available online through GitHub.</p>
+
+								<p>ccdr is an R package for structure learning of linear Bayesian networks from high-dimensional, Gaussian data. The underlying algorithm estimates a Bayesian network (aka DAG or belief net) using penalized maximum likelihood based on L1 or concave (MCP) regularization and observational data.</p>
+
+								<p><a class="my-link" href="http://www.github.com/itsrainingdata/ccdr/">Link to source code.</a></p>
+							</div>
+						</div> <!-- END SOFTWARE-CONTENT DIV -->
+
+						<div class="my-content" id="consulting-content">
+							<p class="my-hidden-heading">// consulting</p>
+							<div class="content-wrapper">
+								<p>I am available for part-time and short-term consulting projects in analytics, web development, graphic design, modeling and simulation. I am experienced in many core languages as well as web-oriented and design-oriented software.</p>
+
+								<ul>
+									<li>Data: R + Rcpp / SQL / PL/pgSQL / MapReduce</li>
+									<li>Numerics: Mathematica / MATLAB</li>
+									<li>Core: C++ / C / Python / Java / Visual Basic</li>
+									<li><span id="playtime">Web: HTML(5) / XML / CSS / Javascript / jQuery</span></li>
+									<li>Design: Photoshop / Digital photography / Video editing</li>
+								</ul>
+
+								<p>I am particularly interested in the analysis of social data, including social networks, advertising, and marketing.</p>
+							</div>
+
+				            <p class="my-subject-heading">// availability</p>
+				            <div class="content-wrapper">
+								<p>Please <a class="my-link" id="click-about-2" href="#">e-mail me</a> for more details.</p>
+							</div>
+						</div> <!-- END CONSULTING-CONTENT DIV -->
+
+						<div class="my-content" id="about-content">
+							<p class="my-hidden-heading">// contact</p>
+							<div class="content-wrapper">
+								<p>If you want to...</p>
+
+								<p>...e-mail me: <a class="my-link" href="#">bryon</a> at <a class="my-link" href="#">stat</a> dot <a class="my-link" href="#">ucla</a> dot <a class="my-link" href="#">edu</a>.</p>
+
+								<p>...find me on LinkedIn, <a class="my-link" href="https://www.linkedin.com/in/bryonaragam/">click here.</a></p>
+
+								<p>...see my CV, <a class="my-link" href="./cv.pdf">click here.</a></p>
+
+								<p>I also got a little bored while <a class="my-link" href="#" data-toggle="modal" data-target="#design-modal">designing</a> this site so I hid some easter eggs here and there.</p>
+							</div>
+
+							<p class="my-subject-heading">// more about me</p>
+							<div class="content-wrapper">
+								<p>I am a lecturer in the Department of Statistics at UCLA. I recently received my PhD in Statistics from UCLA studying graphical models and high-dimensional statistics under Professor Qing Zhou. I also have a MA in Applied Math from UCLA and a BS in Math from the University of Tennessee. Once upon a time, I had a short stint doing web development and analytics for a small market research firm. This explains my obsession with marketing and advertising.</p>
+							</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="design-modal" tabindex="-1" role="dialog" aria-labelledby="design-modal-title" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											
+											<span class="modal-title force-text-colour my-subject-heading" id="design-modal-title"> // About this site</span>
+										</div>
+
+										<div class="modal-body force-text-colour">
+											<p class="force-text-colour">This site was designed using...</p>
+
+												<ul>
+													<li>Bootstrap 3</li>
+													<li>jQuery</li>
+													<li>LESS + CSS3</li>
+													<li><a class="my-link" href="http://www.liliansurya.com/">Lilian Surya</a></li>
+												</ul>
+
+											<p class="force-text-colour">No images were used or harmed in the development of this site.</p>
+
+											<p class="force-text-colour">If you are having any issues navigating the site or (gasp!) found a bug, please let me know by shooting me an e-mail at <a class="my-link" href="#">bryon</a> at <a class="my-link" href="#">stat</a> dot <a class="my-link" href="#">ucla</a> dot <a class="my-link" href="#">edu</a>.</p>										
+										</div>
 									</div>
 								</div>
-							</div>
-						</div> <!-- END MODAL DIV -->
-					</div>
+							</div> <!-- END MODAL DIV -->
 
-					<div class="my-content" id="research-content">
-						<p class="my-hidden-heading">// research</p>
-						<p>I am currently working on my PhD under the guidance of Professor Qing Zhou. Our work centers around high-dimensional statistical computing and graphical models. We are developing efficient algorithms and theory for estimating large Bayesian networks in a high dimensional setting using techniques from sparse approximation and compressed sensing.</p>
+						</div> <!-- END ABOUT-CONTENT DIV -->
 
-						<p>Some of my general research interests include:</p>
-						<ul>
-							<li>Machine learning / graphical modeling / unsupervised learning</li>
-							<li>Computational statistics / distributed learning / high performance computing</li>
-							<li>High-dimensional statistics / compressed sensing</li>
-							<li>Sparse modeling / low-rank approximation / inverse problems</li>
-							<li>Bayesian networks / causal inference</li>
-							<li>Decision theory / social choice theory</li>
-						</ul>
+					</div> <!-- END MY-MAIN-CONTENT DIV -->
+					
+				</div> <!-- END ROW #2 -->
 
-						<br/>
-						<p class="my-subject-heading">// publications</p>
-						<p>Aragam, B. and Zhou, Q. (2015). <a class="my-link" href="http://arxiv.org/abs/1401.0852">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)</p>
-						<p class="my-subject-heading">// unpublished work</p>
-						<p><a class="my-link" href="papers/thesis.pdf">Volume Comparison with Integral Bounds in Lorentz Manifolds</a>, Undergraduate Thesis (joint work with J. Corvino, A. Karl, and A. Rochford)</p>
-					</div>
-
-					<div class="my-content" id="teaching-content">
-						<p>This quarter I am teaching Statistics 495A (Teaching College Statistics).</p>
-
-						<p>Past teaching assignments:</p>
-						<ul>
-							<li>Statistics 100A: Introduction to Probability (Spring 2014)</li>
-							<li>Statistics 101B: Introduction to Design and Analysis of Experiments (Winter 2014)</li>
-							<li>Statistics 102A: Introduction to Computational Statistics with R (Fall 2013)</li>
-							<li>PIC 20A: Principles of Java (Spring 2010)</li>
-							<li>PIC 10A: Introduction to C++ Programming (Winter 2010)</li>
-							<li>PIC 10A: Introduction to C++ Programming (Fall 2009)</li>
-						</ul>
-					</div>
-
-					<div class="my-content" id="tutoring-content">
-						<p class="my-hidden-heading">// tutoring</p>
-						<p>I have been tutoring both privately and as a departmental assistant for 10+ years. My direct experience includes:</p>
-			            <ul>
-			            	<li>General high school math and science</li>
-			                <li>High school / AP / college calculus, computer science, and statistics</li>
-			                <li>Pre-algebra and college algebra</li>
-			                <li>Most undergraduate math / statistics subjects, including linear algebra, differential equations, analysis, algebra, probability and geometry/topology</li>
-			            </ul>
-			            
-			            <p>I specialize in working with students of all ages with exceptional difficulties in mathematics. You may view my resum&#233; <a class="my-link" href="./bryonresume.pdf">here</a>.</p>
-			            
-			            <p>I am also <a class="my-link" id="click-consulting-1" href="#">available for consulting</a> in web design and development, simulation development, and business statistics.</p>
-
-						<br/>
-			            <p class="my-subject-heading">// availability</p>
-						<p>Weekends and most weeknights. Appointments can be made during the day by request. I have an office at UCLA available for meeting, and I am willing to travel if necessary for appointments. Please <a class="my-link" id="click-about-1" href="#">e-mail me</a> for more details or to set up an appointment.</p>
-
-					</div>
-
-					<div class="my-content" id="consulting-content">
-						<p class="my-hidden-heading">// consulting</p>
-						<p>I am available for part-time and short-term consulting projects in analytics, web development, graphic design, modeling and simulation. I am experienced in many core languages as well as web-oriented and design-oriented software.</p>
-
-						<ul>
-							<li>Data: R + Rcpp / SQL / PL/pgSQL / MapReduce</li>
-							<li>Numerics: Mathematica / MATLAB</li>
-							<li>Core: C++ / C / Python / Java / Visual Basic</li>
-							<li><span id="playtime">Web: HTML(5) / XML / CSS / Javascript / jQuery</span></li>
-							<li>Design: Photoshop / Digital photography / Video editing</li>
-						</ul>
-
-						<p>I am particularly interested in the analysis of social data, including social networks, advertising, and marketing.</p>
-
-						<br/>
-			            <p class="my-subject-heading">// availability</p>
-						<p>Please <a class="my-link" id="click-about-2" href="#">e-mail me</a> for more details.</p>
-					</div>
-
-					<div class="my-content" id="about-content">
-						<p class="my-hidden-heading">// contact</p>
-						<p>If you want to...</p>
-
-						<p>...e-mail me: <a class="my-link" href="#">contactbryon@gmail.com</a></p>
-
-						<p>...find me on LinkedIn, <a class="my-link" href="https://www.linkedin.com/in/bryonaragam/">click here.</a></p>
-
-						<p>...see my resum&#233;, <a class="my-link" href="./bryonresume.pdf">click here.</a></p>
-
-						<p>...see my preprints, <a class="my-link" href="#" data-toggle="modal" data-target="#pubs-modal">click here.</a></p>
-
-						<br/>
-						<p class="my-subject-heading">// more about me</p>
-						<p>I am a fifth-year PhD student in the Department of Statistics at UCLA. I have a Masters in Applied Math from UCLA (2010) and received my Bachelor's in Math from the University of Tennessee (2008). Before teleporting across the country to start grad school, I had a short stint doing web development and analytics for a small market research firm. This explains my obsession with marketing and advertising.</p>
-
-						<!-- Modal -->
-						<div class="modal fade" id="pubs-modal" tabindex="-1" role="dialog" aria-labelledby="preprint-modal-title" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										
-										<span class="modal-title force-text-colour my-subject-heading" id="preprint-modal-title"> // preprints and unpublished work</span>
-									</div>
-
-									<div class="modal-body">
-										<p class="force-text-colour">For more details on my research, please <a class="my-link" id="click-research-1" href="#" data-dismiss="modal" aria-hidden="true">visit my research page</a>.</p>
-
-										<p class="force-text-colour">Aragam, B. and Zhou, Q. (2015). <a class="my-link" href="http://arxiv.org/abs/1401.0852">Concave penalized estimation of sparse Gaussian Bayesian networks.</a> Journal of Machine Learning Research, in press. (<a class="my-link" href="http://arxiv.org/pdf/1401.0852v2.pdf">preprint</a>)</p>
-
-										<p class="force-text-colour"><a class="my-link" href="papers/thesis.pdf">Volume Comparison with Integral Bounds in Lorentz Manifolds</a>, Undergraduate Thesis (joint work with J. Corvino, A. Karl, and A. Rochford)</p>
-									</div>
-								</div>
-							</div>
-						</div> <!-- END MODAL DIV -->
-
-					</div> <!-- END ABOUT-CONTENT DIV -->
-
-				</div> <!-- END MY-MAIN-CONTENT DIV -->
-				
-			</div> <!-- END ROW #2 -->
+			</div> <!-- END BG-LAYER CONTAINER -->
 			
 		</div> <!-- END MAIN CONTAINER -->
 		
