@@ -26,13 +26,13 @@
 @default-vw-size: 767px;
 
 // added for magnified version
-@large-font-size: 18px;
-@mobile-main-title-font-size: 2 * @large-font-size; // 22pt in original
+@large-font-size: 16px;
+@mobile-main-title-font-size: 2.25 * @large-font-size; // 22pt in original
 @main-title-font-size: 2.25 * @large-font-size;		// 24pt in original
 
 @var-font-size: 2.5vw;
 @var-main-title-font-size: 2.25 * @var-font-size;	// 24pt in original
-@max-font-size: 24px;
+@max-font-size: 20px;
 @max-main-title-font-size: 2.25 * @max-font-size;	// 24pt in original
 
 // clean theme colours
@@ -86,12 +86,59 @@ body{
 	overflow: auto;
 }
 
-p{
-	margin: 0 0 16px; // 10px >> 16px
-}
-
 a{
 	color: @main-text-colour;
+}
+
+//
+// TAGS FOR SPECIALIZED CONTENT
+//
+@media(min-width: @default-vw-size){
+	.panel-heading > .article-ref{
+		margin: 0 0 0 10px;
+	}
+
+	div.content-wrapper {
+		padding-top: 10px;
+	}
+
+	div.content-wrapper > p{
+		margin: 0 0 10px 25px;	
+	}
+
+	// All lists wrapped inside my-content
+	.my-content ul.list-wrapper{
+		margin: 0 0 10px 6px;
+		padding-top: 10px;
+	}
+
+	// All lists wrapped inside content-wrapper
+	.content-wrapper ul{
+		margin: 0 0 10px 26px;	
+	}
+}
+
+@media(max-width: @default-vw-size){
+	.panel-heading > .article-ref{
+		margin: 0 0 0 6px;
+	}
+
+	div.content-wrapper {
+		padding-top: 10px;
+	}
+
+	div.content-wrapper > p{
+		margin: 0 0 10px 20px;	
+	}
+
+	div > ul.list-wrapper{
+		margin: 0 0 10px -2px;
+		padding-top: 10px;
+	}
+
+	div.content-wrapper > ul{
+		margin: 0 0 10px 16px;	
+	}
 }
 
 //
@@ -120,7 +167,6 @@ a{
 //
 // MENU LIST
 //
-
 @media(max-width: 968px){
 	.col-sm-3{
 		padding-right: 15px; 
@@ -288,10 +334,14 @@ a{
 // NAVBAR
 //
 .navbar-toggle {
-	margin-top: 15px; // 8px >> 15px
+	margin-top: 16px; // 8px >> 15px
 }
 
 // Adjusts main title text spacing, width, colour
+.my-main-heading{
+	margin: 8px 0 4px 0;
+}
+
 .my-main-heading > a{
 	//font-weight: 300;
 	letter-spacing: 0.5px;
@@ -398,7 +448,7 @@ a{
 
 @media(max-width: @default-vw-size){
 	#my-main-container{
-		padding: 50px 25px 25px 25px;
+		padding: 60px 25px 25px 25px;
 		margin-right: auto; 
 		margin-left: auto; 
 	}
@@ -416,6 +466,9 @@ a{
 	font-weight: @main-text-weight;
 	//font-size: 13pt;
 	font-size: @large-font-size * 1.25;
+	padding-top: 8px;
+	padding-bottom: 2px;
+	margin-bottom: 0px;
 }
 
 .my-hidden-heading{
@@ -471,11 +524,10 @@ a{
 #my-footer{
 	font-weight: @main-text-weight;
 	color: @main-text-colour;
-	float: right;
-	margin-top: 10px;
+	margin-top: 16px;
 }
 
-#my-footer > a{
+#my-footer a{
 	cursor: pointer;
 }
 
@@ -518,4 +570,21 @@ a{
 
 .content-hidden{
 	display: none;
+}
+
+// Testing / development
+.abstract-panel > p{
+	font-size: 12pt;
+}
+
+.heavy{
+	font-weight: 400;
+}
+
+#my-left-footer{
+	float: left;
+}
+
+#my-right-footer{
+	float: right;
 }

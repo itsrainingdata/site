@@ -408,7 +408,19 @@ $(document).ready(function(){
 			var background_img = $("#bg");
 
 			// now add it back to the necessary content div
-			$(id_show).append('<div id="my-footer">&nbsp;<a id="my-day">day</a> / <a id="my-night">night</a> / <a id="my-off">off</a>&nbsp;</div>');
+			// $(id_show).append('<div id="my-footer">&nbsp;<a id="my-day">day</a> / <a id="my-night">night</a> / <a id="my-off">off</a>&nbsp;</div>');
+			$(id_show).append('\
+				<div id="my-footer"> \
+					<div id="my-left-footer"> \
+						<a style="float:left; margin-right:18px" id="linkedin" href="http://www.linkedin.com/in/bryonaragam"><i class="fa fa-linkedin fa-1x"></i></a> \
+						<a style="float:left; margin-right:18px" href="https://github.com/itsrainingdata"><i class="fa fa-github fa-1x"></i></a> \
+						<a style="float:left; margin-right:18px" id="email-xs" href="mailto:bryon@stat.ucla.edu"><i class="fa fa-envelope-o fa-1x"></i> </a> \
+					</div> \
+					<div id="my-right-footer"> \
+						&nbsp;<a id="my-day">day</a> / <a id="my-night">night</a> / <a id="my-off">off</a>&nbsp; \
+					</div> \
+				</div> \
+			');
 			$("#my-footer, #my-footer > a").css("color", CURRENT_THEME[3]);
 			
 			// if there is already an image background we need to make sure the footer is always easy to see
@@ -480,8 +492,13 @@ $(document).ready(function(){
 		changeContent($("#teaching, #teaching-xs"), "#teaching-content", fade_delay, true);
 	});
 
-	$("#tutoring, #tutoring-xs").click(function(){
-		changeContent($("#tutoring, #tutoring-xs"), "#tutoring-content", fade_delay, true);
+	// deprecating
+	// $("#tutoring, #tutoring-xs").click(function(){
+	// 	changeContent($("#tutoring, #tutoring-xs"), "#tutoring-content", fade_delay, true);
+	// });
+
+	$("#software, #software-xs").click(function(){
+		changeContent($("#software, #software-xs"), "#software-content", fade_delay, true);
 	});
 
 	$("#consulting, #consulting-xs, #click-consulting-1").click(function(){
