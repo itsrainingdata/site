@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<meta name="keywords" content="statistics,research,math,phd,high dimensional,compressed sensing,bayesian networks">
-    	<meta name="description" content="Personal homepage of Bryon Aragam, PhD candidate in Statistics at UCLA.">
+    	<meta name="description" content="Personal homepage of Bryon Aragam, Postdoc in the Machine Learning Department at CMU.">
 	    <meta name="author" content="Bryon Aragam">
-		<title>Bryon Aragam // UCLA Statistics</title>
+		<title>Bryon Aragam // Carnegie Mellon University</title>
 		
 		<!-- CSS -->
 		<!-- <link rel="stylesheet" href="./frameworks/bootstrap/css/bootstrap.min.css"  type="text/css" /> <!-- Local hosting (slow) -->
@@ -108,13 +108,14 @@
 						<div class="my-content" id="intro-content">
 							<p class="my-hidden-heading">// about</p>
 							<div class="content-wrapper">
-								<p>Lecturer in the Department of Statistics at UCLA.</p>
+								<p>Postdoc in the <a href="http://www.sailing.cs.cmu.edu/main/">SAILING Lab</a> at <a href="http://www.cmu.edu">CMU</a> under the supervision of <a href="http://www.cs.cmu.edu/~epxing/">Eric Xing</a>, <a href="http://www.ml.cmu.edu">Machine Learning Department</a>.</p>
 							</div>
 								
-							<p class="my-subject-heading">// announcements</p>
+							<!--<p class="my-subject-heading">// announcements</p>
 								<div class="content-wrapper">
 									<p>I will be organizing an informal reading group on High-Dimensional Statistics and Machine Learning in Winter 2016. If you are interested in participating, please <a class="my-link" id="click-about-2" href="#">get in touch</a>.</p>
 								</div>
+							-->
 
 							<p class="my-subject-heading">// research interests</p>
 							<ul class="list-wrapper">
@@ -183,12 +184,11 @@
 						<div class="my-content" id="research-content">
 							<p class="my-hidden-heading">// research</p>
 							<div class="content-wrapper">
-								<p>My main interests involve problems at the intersection of high-dimensional statistics and machine learning, with a focus on developing algorithms with sound theoretical guarantees. Some of my general interests include:</p>
+								<p>My main interests involve problems at the intersection of high-dimensional statistics and machine learning, with a focus on developing scalable algorithms with sound theoretical guarantees. Some of my general interests include:</p>
 
 								<ul class="extra-indent">
-									<li>Machine learning / graphical modeling / unsupervised learning</li>
-									<li>Computational statistics / distributed learning / high performance computing</li>
-									<li>High-dimensional statistics / compressed sensing</li>
+									<li>High-dimensional statistics / graphical modeling / unsupervised learning</li>
+									<li>Distributed and nonconvex optimization / computational statistics</li>
 									<li>Sparse modeling / low-rank approximation / inverse problems</li>
 									<li>Bayesian networks / causal inference</li>
 									<li>Decision theory / social choice theory</li>
@@ -313,10 +313,11 @@
 
 						<div class="my-content" id="teaching-content">
 							<div class="content-wrapper">
-								<p>This quarter I am teaching Statistics 10 (Introduction to Statistical Reasoning).</p>
+								<p>I will not be teaching during 2015-16.</p>
 
-								<p>Past teaching assignments:</p>
+								<p>Past teaching assignments (all at UCLA):</p>
 								<ul>
+									<li>Statistics 10: Introduction to Statistical Reasoning (2015-2016)</li>
 									<li>Statistics 495A: Teaching College Statistics (Winter 2015)</li>
 									<li>Statistics 100A: Introduction to Probability (Spring 2014)</li>
 									<li>Statistics 101B: Introduction to Design and Analysis of Experiments (Winter 2014)</li>
@@ -330,6 +331,13 @@
 
 						<div class="my-content" id="software-content">
 							<p class="my-hidden-heading">// software</p>
+							<p class="my-subject-heading">// sparsebn package for R</p>
+							<div class="content-wrapper">
+								<p>sparsebn is an R package for learning large-scale Bayesian networks from high-dimensional data. Using recent techniques based on sparse regularization, coordinate descent, and nonconvex optimization, it provides methods that incorporate mixed experimental and observational data with either continuous or discrete observations. Notably, the algorithms scale to datasets with many thousands of variables. The underlying framework uses penalized maximum likelihood under L1 or concave (MCP) regularization.</p>
+
+								<p><a class="my-link" href="https://cran.r-project.org/package=sparsebn">CRAN mirror</a> / <a class="my-link" href="http://www.github.com/itsrainingdata/sparsebn/">Source code.</a></p>
+							</div>
+
 							<p class="my-subject-heading">// ccdr package for R</p>
 							<div class="content-wrapper">
 								<p>The source code for the CCDr algorithm described in <a class="my-link" href="http://arxiv.org/abs/1401.0852">Aragam and Zhou (2015)</a> is freely available online through GitHub.</p>
@@ -374,11 +382,6 @@
 								<p>...see my CV, <a class="my-link" href="./cv.pdf">click here.</a></p>
 
 								<p>I also got a little bored while <a class="my-link" href="#" data-toggle="modal" data-target="#design-modal">designing</a> this site so I hid some easter eggs here and there.</p>
-							</div>
-
-							<p class="my-subject-heading">// more about me</p>
-							<div class="content-wrapper">
-								<p>I am a lecturer in the Department of Statistics at UCLA. I recently received my PhD in Statistics from UCLA studying graphical models and high-dimensional statistics under Professor Qing Zhou. I also have a MA in Applied Math from UCLA and a BS in Math from the University of Tennessee. Once upon a time, I had a short stint doing web development and analytics for a small market research firm. This explains my obsession with marketing and advertising.</p>
 							</div>
 
 							<!-- Modal -->
